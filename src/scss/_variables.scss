@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$fonts: "Inter", sans-serif !important;
+$colorWhite: #ffffff;
+$colorBlack: #14141a;
+$colorGray: #69788f;
+$bgColor: rgba(238, 245, 248, 0.4);
+$textMenuColor: #d7e7ff;
+$activeColor: #0070ba;
+$hoverColor: #1eb6c9;
+
+@mixin extraSmall {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin Small {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin Medium {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin Large {
+    @media screen and (max-width: 1540px) {
+        @content;
+    }
+}
+
+@mixin extraLarge {
+    @media screen and (min-width: 1540px) {
+        @content;
+    }
+}
+
+@mixin Btn_Outline {
+    width: 180px;
+    height: 54px;
+    border: 1px solid #1eb6c9;
+    border-radius: 8px;
+    color: $colorWhite;
+    font-size: 16px;
+}
+
+@mixin Btn_Contained {
+    width: 180px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    color: $colorWhite;
+    font-size: 16px;
+    background: linear-gradient(90deg, #1eb6c9 0%, #7260b7 100%);
+}
