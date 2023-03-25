@@ -10,10 +10,10 @@ import {
 // import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
 import { BsMicrosoft } from 'react-icons/bs';
 
-import Logo from "./images/logo.svg";
+import Logo from "./images/logo.png";
 
-import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import HeroLight from "./images/ww.jpg";
+import HeroDark from "./images/dark2.webp";
 export { HeroLight as Light };
 export { HeroDark as Dark };
 
@@ -28,32 +28,38 @@ export const skillData = [
   {
     id: 1,
     skill: <BsMicrosoft className="display-4" />,
-    name: "Microsoft ",
+    name: "UNI SOLVE ",
+    link: "https://www.ubuy.uz/en/brand/uni-solve"
   },
   {
     id: 2,
     skill: <BsMicrosoft className="display-4" />,
-    name: "Company 2",
+    name: "UZCARD payment system",
+    link: "https://uzcard.uz/ru"
   },
   {
     id: 3,
     skill: <BsMicrosoft className="display-4" />,
-    name: "Company 3",
+    name: "TechCells ",
+    link: "https://techcells.com/"
   },
   {
     id: 4,
     skill: <BsMicrosoft className="display-4" />,
-    name: "Company 4",
+    name: "Najot Ta'lim",
+    link: "https://najottalim.uz/"
   },
   {
     id: 5,
     skill: <BsMicrosoft className="display-4" />,
-    name: "Company 5",
+    name: "BARQ App",
+    link: "https://barqapp.com/"
   },
   {
     id: 6,
     skill: <BsMicrosoft className="display-4" />,
-    name: "Company 6",
+    name: "Microsoft",
+    link: "https://www.microsoft.com/ru-ru"
   },
   // {
   //   id: 7,

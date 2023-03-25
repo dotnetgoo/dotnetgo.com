@@ -56,6 +56,7 @@ export default function Interviews() {
             activeIndex={index} onSelect={handleSelect}>
             {items.map((item) => (
               <Carousel.Item key={item.id}>
+
                 <img className="d-block w-100" src={item.src} alt={item.alt} />
                 <Carousel.Caption>
                   <h3>{item.caption}</h3>

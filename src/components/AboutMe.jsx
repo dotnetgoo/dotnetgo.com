@@ -19,7 +19,7 @@ const StyledAboutMe = styled.section`
 `;
 
 export default function AboutMe() {
-  const { avatar_url, bio } = useSelector(selectData);
+  const { avatar_url } = useSelector(selectData);
   return (
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">
@@ -31,10 +31,14 @@ export default function AboutMe() {
             </Title>
           </Container>
           <Row className="align-items-center mt-5">
-            <Col className="d-flex flex-column text-center">
+            <Col className="d-flex flex-column ">
               <Container>
-                <p>{bio}</p>
-                {moreInfo && <p>{moreInfo}</p>}
+                <p><b>Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher</b></p>
+                {moreInfo && <p>Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast.
+
+                  The biggest programmer ever is the Allah. He created software called "Life" and it is the most perfect software. Every part of this software works on realtime communication. This software also has an instruction - Koran. A person, who knows Koran will never struggle using the software "Life".
+
+                  In other words, life itself is like a programming. The life i told about has a lots of paths, but goals are the same. And I am on the best of these paths. So in .NET ...</p>}
               </Container>
             </Col>
             <Col className="d-none d-md-block text-center">

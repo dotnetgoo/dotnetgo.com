@@ -1,10 +1,9 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import { FaChevronCircleDown } from "react-icons/fa";
-import Logo from "../images/logo.svg";
+import Logo from "../images/logo2.png";
 import { Light, Dark } from "../data";
 import { Col, Container, Row } from "react-bootstrap";
-import { Spin } from "./globalStyledComponents";
 import SocialLinks from "./SocialLinks";
 
 const StyledHero = styled.header`
@@ -39,21 +38,14 @@ const StyledHero = styled.header`
     height: 100%;
     background: ${({ theme }) =>
     theme.name === "light"
-      ? "rgba(255, 255, 255, 0.2)"
+      ? "rgba(255, 255, 255, 0.5)"
       : "rgba(0, 0, 0, 0.2)"};
     z-index: -1;
   }
 
   .down-container {
     height: 10rem;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .hero-img {
-      animation: ${Spin} infinite 20s linear;
-    }
-  }
-
+  } 
   @media screen and (min-width: 1180px) {
     &::before {
       background: ${({ theme }) =>
@@ -79,9 +71,9 @@ export default function Hero() {
   return (
     <StyledHero>
       <Container>
-        <Row className="align-items-center text-center">
+        <Row className="align-items-center text-center ">
           <Col>
-            <h1 className="mb-3 display-3 title ">Mukhammadkarim Tukhtaboyev</h1>
+            <h1 className="mb-3 display-3 title " style={{ fontWeight: 600 }}>Mukhammadkarim Tukhtaboyev</h1>
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
             </div>
