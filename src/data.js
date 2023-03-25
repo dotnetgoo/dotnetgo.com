@@ -29,7 +29,7 @@ export const skillData = [
     id: 1,
     skill: <BsMicrosoft className="display-4" />,
     name: "UNI SOLVE ",
-    link: "https://www.ubuy.uz/en/brand/uni-solve"
+    link: "https://www.ubuy.uz/en/brand/uni-solve",
   },
   {
     id: 2,
