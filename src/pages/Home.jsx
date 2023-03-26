@@ -17,7 +17,7 @@ export default function Home() {
   const { name } = useSelector(selectData);
   React.useEffect(
     function () {
-      document.title = `Mukhammadkarim Tukhtaboyev | Portfolio`;
+      document.title = `Mukhammadkarim Tukhtaboyev | dotnetgo.com`;
     },
     [name]
   );

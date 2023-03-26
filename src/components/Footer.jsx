@@ -4,13 +4,13 @@ import SocialLinks from "./SocialLinks";
 
 const StyledFooter = styled.footer`
   min-height: var(--min-footer-height);
-  background: #D4E5FF;
+  background: linear-gradient(128.87deg, #0b6cff 14.05%, #512bd4 89.3%);
 
   a {
-    color: #45413c;
+    color: #fbfdff;
 
     &:hover {
-      color: #fbfdff;
+      color: #D600AA;
     }
   }
 `;

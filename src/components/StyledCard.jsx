@@ -23,8 +23,8 @@ export default function StyledCard({ theme, name, description }) {
     <StyledCardComponent>
       <Card bg={theme === "light" ? "white" : "dark"}>
 
-        <Card.Body className="overflow-auto text-center">
-          <Card.Title>{name}</Card.Title>
+        <Card.Body className="overflow-auto ">
+          <Card.Title className="text-center">{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
         </Card.Body>
       </Card>

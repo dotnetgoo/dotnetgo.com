@@ -11,25 +11,8 @@ import styled from "styled-components";
 import { Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
-
+import { mainGoals } from "../data";
 const StyledSection = styled.section``;
-const mainGoals = [
-  {
-    id: 0,
-    name: "Lorem, ipsum dolor.",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  },
-  {
-    id: 2,
-    name: "Lorem, ipsum dolor.",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  },
-  {
-    id: 3,
-    name: "Lorem, ipsum dolor.",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  }
-]
 export default function Goals() {
   const { theme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
@@ -53,7 +36,7 @@ export default function Goals() {
           {error && <h2 className="text-center">{error}</h2>}
           {!error && data.length === 0 && (
             <h2 className="text-center">
-              Oops, you do not have any GitHub projects yet...
+              Oops, Connection problem...
             </h2>
           )}
           {mainGoals.length !== 0 && (

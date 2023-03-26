@@ -119,7 +119,6 @@ const StyledDiv = styled.div`
   .link-icons {
     color: ${({ theme }) => (theme.name === "light" ? "black" : "#EBECF0")};
   }
-
   &.show-up {
     visibility: visible;
   }

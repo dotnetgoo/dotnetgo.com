@@ -3,7 +3,7 @@ import { useAppContext } from "../appContext";
 import { Link } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FixedNavSpacer, ToggleSwitch } from "./globalStyledComponents";
-import Logo from "../images/logo.svg";
+import Logo from "../images/logo.png";
 export default function NavBar() {
   const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
   return (

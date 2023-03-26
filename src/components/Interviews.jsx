@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Element } from "react-scroll";
 // Data
+import { interviewsData } from "../data";
 // Components
 import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
@@ -11,34 +12,28 @@ const StyledInterview = styled.section`
   p {
     font-size: 1.25rem;
   }
-  .img {
+  iframe {
     width: 18rem;
-    height: 18rem;
+    height: 30rem;
   }
+  @media screen and (max-width: 800px) {
+    iframe {
+      height: 20rem;
+    }
+    h3{
+      font-size:16px
+    }
+  }
+  
+   @media screen and (max-width: 400px) {
+    iframe {
+      height: 14rem;
+      font-size:12px
+    }
+    }
 `;
-const items = [
-  {
-    id: 1,
-    src: 'https://via.placeholder.com/800x400/000000/FFFFFF?text=Image+1',
-    alt: 'Interviews 1',
-    caption: 'Interviews 1 caption',
-  },
-  {
-    id: 2,
-    src: 'https://via.placeholder.com/800x400/FFFFFF/000000?text=Image+2',
-    alt: 'Interviews 2',
-    caption: 'Interviews 2 caption',
-  },
-  {
-    id: 3,
-    src: 'https://via.placeholder.com/800x400/000000/FFFFFF?text=Image+3',
-    alt: 'Interviews 3',
-    caption: 'Interviews 3 caption',
-  },
-];
 export default function Interviews() {
   const [index, setIndex] = useState(0);
-
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
@@ -46,7 +41,7 @@ export default function Interviews() {
     <Element name={"Interviews"} id="interviews">
       <StyledInterview className="section">
         <Container>
-          <Container className="d-flex">
+          <Container className="d-flex mb-5">
             <Title>
               <h2>My Interviews</h2>
               <div className="underline"></div>
@@ -54,11 +49,11 @@ export default function Interviews() {
           </Container>
           <Carousel interval={3000}
             activeIndex={index} onSelect={handleSelect}>
-            {items.map((item) => (
+            {interviewsData.map((item) => (
               <Carousel.Item key={item.id}>
-                <img className="d-block w-100" src={item.src} alt={item.alt} />
+                <iframe className="d-block w-100 " src={item.src} title={item.caption} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 <Carousel.Caption>
-                  <h3>{item.caption}</h3>
+                  <h3 style={{ color: "#fff", background: "#000" }}>{item.caption}</h3>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}

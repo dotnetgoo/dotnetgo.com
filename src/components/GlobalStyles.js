@@ -39,7 +39,6 @@ a:hover {
   font-size: 2.25rem;
   transition: var(--transition);
   color: ${({ theme }) => theme.color};
-
   &:hover {
         color: var(--primary);
       }

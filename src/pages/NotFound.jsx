@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import styled from "styled-components";
 // Media
-import Logo from "../images/logo.svg";
+import Logo from "../images/logo.png";
 // Components
 import { Container } from "react-bootstrap";
 import { Spin } from "../components/globalStyledComponents";
@@ -40,7 +40,7 @@ export default function NotFound() {
 
   React.useEffect(
     function () {
-      document.title = `${name} | Portfolio`;
+      document.title = `${name} | dotnetgo.com`;
     },
     [name]
   );

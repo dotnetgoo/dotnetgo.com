@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 // Components
 import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
-
+import { recommendationsData } from "../data";
 const StyledInterview = styled.section`
   p {
     font-size: 1.25rem;
@@ -15,7 +15,6 @@ const StyledInterview = styled.section`
   }
 `;
 export default function Recommendations() {
-
   return (
     <Element name={"Recommendations"} id="recommendations">
       <StyledInterview className="section">
@@ -26,18 +25,14 @@ export default function Recommendations() {
               <div className="underline"></div>
             </Title>
           </Container>
-          <div className="mb-5">
-            <h3>Recommendations 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, Nihil voluptates porro molestiae atque in officia? quia animi maxime eos, pariatur hic. Nihil voluptates porro molestiae atque in officia?</p>
-          </div>
-          <div className="mb-5">
-            <h3>Recommendations 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, quia animi maxime eos, pariatur hic. Nihil voluptates porro molestiae atque in officia?</p>
-          </div>
-          <div className="mb-5">
-            <h3>Recommendations 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, quia animi maxime eos, pariatur hic.</p>
-          </div>
+          {recommendationsData.map(element => {
+            return (
+              <div className="mb-5" key={element.id}>
+                <h3>{element.title}</h3>
+                <p>{element.description}</p>
+              </div>
+            )
+          })}
         </Container>
       </StyledInterview>
     </Element>

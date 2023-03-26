@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Element } from "react-scroll";
 // Data
-import { moreInfo } from "../data";
+import { aboutData } from "../data";
+import Light from "../images/bg-about.jpg";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
@@ -16,10 +17,13 @@ const StyledAboutMe = styled.section`
     width: 18rem;
     height: 18rem;
   }
+  {
+    background: ${({ theme }) => theme.name === "light" ? `linear-gradient(#ebf8e1, #ebf8e1, #ebf8e1), url(${Light}) ` : `linear-gradient(#27272A, #27272A, #ebf8e1)`
+  }}
 `;
 
 export default function AboutMe() {
-  const { avatar_url, bio } = useSelector(selectData);
+  const { avatar_url } = useSelector(selectData);
   return (
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">
@@ -30,14 +34,14 @@ export default function AboutMe() {
               <div className="underline"></div>
             </Title>
           </Container>
-          <Row className="align-items-center mt-5">
-            <Col className="d-flex flex-column text-center">
+          <Row className="align-items-center mt-5" xs={1} md={2} lg={2}>
+            <Col className="d-flex flex-column ">
               <Container>
-                <p>{bio}</p>
-                {moreInfo && <p>{moreInfo}</p>}
+                <p><b>{aboutData.title}</b></p>
+                <p>{aboutData.description}</p>
               </Container>
             </Col>
-            <Col className="d-none d-md-block text-center">
+            <Col className=" d-md-block text-center">
               <img
                 src={avatar_url}
                 alt="GitHub Avatar"
