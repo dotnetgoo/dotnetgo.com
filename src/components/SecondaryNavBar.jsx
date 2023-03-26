@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { ToggleSwitch, FixedNavSpacer } from "./globalStyledComponents";
 // Images
-import Logo from "../images/logo.svg";
+import Logo from "../images/logo.png";
 
 export default function SecondaryNavBar() {
   const { pathname } = useLocation();

@@ -1,11 +1,10 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import { FaChevronCircleDown } from "react-icons/fa";
-import Logo from "../images/logo2.png";
-import { Light, Dark } from "../data";
+import Logo from "../images/logo.png";
+import { Light, Dark, Microsoft } from "../data";
 import { Col, Container, Row } from "react-bootstrap";
 import SocialLinks from "./SocialLinks";
-
 const StyledHero = styled.header`
   position: relative;
   display: grid;
@@ -13,7 +12,6 @@ const StyledHero = styled.header`
   max-width: 1920px;
   margin: 0 auto;
   min-height: calc(100vh - var(--nav-height));
-
   &::before {
     content: "";
     position: absolute;
@@ -23,8 +21,8 @@ const StyledHero = styled.header`
     height: 100%;
     background: ${({ theme }) =>
     theme.name === "light"
-      ? "linear-gradient(135deg, var(--primary), var(--bs-light))"
-      : "linear-gradient(135deg, var(--primary), var(--bs-dark))"};
+      ? `url(${Microsoft}) top center fixed no-repeat `
+      : `url(${Microsoft}) top center fixed no-repeat `};
     z-index: -2;
   }
 
