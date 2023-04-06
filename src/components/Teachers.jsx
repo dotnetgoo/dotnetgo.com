@@ -56,6 +56,7 @@ const StyledAboutMe = styled.section`
     line-height: 82px;
     text-align: center;
     color: #000000;
+    margin:90px 0;
   }
   .tech_card p{   
     font-family: 'Space Grotesk';
@@ -74,23 +75,7 @@ const StyledAboutMe = styled.section`
     width: 587px;
    height: 657px;
   }
-  .modal_cont {
-    position:absolute;
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items: center;
-    width: 971px;
-    height: 531px;
-    background: #FFFFFF;
-    box-shadow: -20px 35px 60px rgba(225, 255, 228, 0.25), 10px 35px 60px rgba(83, 0, 206, 0.06);
-    border-radius: 20px;
-    top: 30px;
-    left: 80px;
-    z-index: 500;
-    padding:106px;
-  }
-  .modal_cont img{
+  .tech_modal img{
     width: 177px;
     height: 177px;
     border-radius: 225px;
@@ -126,6 +111,32 @@ const StyledAboutMe = styled.section`
     right:40px;
     top:50px;
   }
+  .more_link:hover{
+    transform:scale(1.03);
+    color:blue;
+  }
+  .tech_modal{
+    position: fixed;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    width: 720px;
+    height: 541px;
+    padding: 24px 36px;
+    bottom: 0;
+    right: 0;
+    z-index: 1200;
+    background: #FFFFFF;
+    box-shadow: -20px 35px 60px rgba(225, 255, 228, 0.25), 10px 35px 60px rgba(83, 0, 206, 0.06);
+    border-radius: 12px;
+    background-color: #fff;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   @media screen and (max-width: 1320px) {
     .tech_card{
       padding: 0px 10px;
@@ -163,13 +174,10 @@ const StyledAboutMe = styled.section`
        font-size: 16px;
        margin-top:6px;
     }
-    .modal_cont {
-      width: 771px;
-      height: 531px;
-      background: #FFFFFF;
-      top: 30px;
-      left: 75px;
-      padding:106px;
+    .tech_modal {
+    width: 620px;
+    height: 501px;
+    padding: 18px 30px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -187,16 +195,14 @@ const StyledAboutMe = styled.section`
         font-size: 14px;
         margin-top: -11px;
       }
-      .modal_cont {
-        width: 546px;
-        height: 368px;
-        top: 30px;
-        left: 0px;
-        padding: 12px;
-    } 
-    .modal_cont img {
-      width: 126px;
-      height: 126px;
+      .tech_modal {
+        width: 600px;
+        height: 481px;
+        padding: 18px 30px;
+        }
+    .tech_modal img {
+      width: 166px;
+      height: 166px;
       margin-bottom: 9px;
   }
   .main_cont h3 {
@@ -208,19 +214,24 @@ const StyledAboutMe = styled.section`
     line-height: 20px;
   }
     }
+  @media screen and (max-width: 630px) {
+    .tech_modal {
+      width: 500px;
+      height: 401px;
+      padding: 18px 30px;
+      }
+  }
   @media screen and (max-width: 540px) {
 .tech_cont{
   display: flex;
   justify-content: center;
 }
-.modal_cont {
-  width: 446px;
-  height: 368px;
-  top: 30px;
-  left: 25px;
-  padding: 12px;
-} 
-.modal_cont img {
+.tech_modal {
+  width: 480px;
+  height: 381px;
+  padding: 16px 26px;
+  }
+.tech_modal img {
 width: 110px;
 height: 110px;
 margin-bottom: 9px;
@@ -235,14 +246,16 @@ line-height: 18px;
 }
   }
   @media screen and (max-width:480px) {
-    .modal_cont {
-      width: 346px;
-      height: 308px;
-      top: 30px;
-      left: 35px;
-      padding: 12px;
-    } 
-    .modal_cont img {
+    h2{
+      margin:10px 0;
+      font-size:27px;
+    }
+    .tech_modal {
+      width: 380px;
+      height: 321px;
+      padding: 16px 26px;
+      }
+    .tech_modal img {
     width: 80px;
     height: 80px;
     margin-bottom: 9px;
@@ -261,14 +274,15 @@ line-height: 18px;
     }
   }
   @media screen and (max-width:410px) {
-    .modal_cont {
-      width: 306px;
-      height: 288px;
-      top: 30px;
-      left: 20px;
-      padding: 12px;
-    } 
-    .modal_cont img {
+    h2{
+      font-size:27px;
+    }
+    .tech_modal {
+      width: 340px;
+      height: 291px;
+      padding: 16px 20px;
+      }
+    .tech_modal img {
     width: 80px;
     height: 80px;
     margin-bottom: 9px;
@@ -286,6 +300,8 @@ line-height: 18px;
       top:20px;
     }
   }
+
+
 `;
 
 export default function Teachers() {
@@ -313,27 +329,29 @@ export default function Teachers() {
                     />
                     <h6>{element.name}</h6>
                     <p>{element.skills}</p>
-                    <p style={{ cursor: "pointer" }} onClick={() => { setindex(element.id) }} >Read More</p>
+                    <p style={{ cursor: "pointer" }} className="more_link" onClick={() => { setindex(element.id) }} >Read More</p>
                   </Col>
                 )
               })
             }
           </Row>
-          {index === 1 && <div className="modal_cont">
+          {index === 1 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
             <img src={tech1} alt="" />
             <h3>DJ Makhkamov</h3>
             <h4>CTO at BARQ, M.Sc. ex Amazon. HIRING NOW</h4>
             <p>Hello, everyone! I know, it's hard to pronounce, so I go by DJ. I am Customer Experience obsessed IT professional from Dubai. I started coding things about 13 years ago. For the last 6 years, I code less and take care more of managerial tasks. I miss coding and still do it once in a while.</p>
-          </div>}
-          {index === 2 && <div className="modal_cont">
+          </div>
+
+          }
+          {index === 2 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
             <img src={tech2} alt="" />
             <h3>Nuriddin Kamardinov</h3>
             <h4>Backend developer</h4>
             <p>Hello, everyone! I know, it's hard to pronounce, so I go by DJ. I am Customer Experience obsessed IT professional from Dubai. I started coding things about 13 years ago. For the last 6 years, I code less and take care more of managerial tasks. I miss coding and still do it once in a while.</p>
           </div>}
-          {index === 3 && <div className="modal_cont">
+          {index === 3 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
             <img src={tech3} alt="" />
             <h3>Zarif Zafarovich</h3>

@@ -19,6 +19,7 @@ line-height: 82px;
 text-align: center;
 color: #000000;
 margin-bottom:35px;
+margin:90px 0;
   }
   .result_card{
     box-sizing: border-box;    
@@ -81,7 +82,8 @@ color: #5300CE;
     }
     @media screen and (max-width:485px) {
       h2{
-        font-size: 36px;
+        margin:10px 0;
+        font-size:36px;
       }
       .result_card h3 {
         font-weight: 700;

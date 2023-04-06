@@ -4,12 +4,6 @@ import {
 
 import Logo from "./images/logo.png";
 
-import HeroLight from "./images/light.jpg";
-import HeroDark from "./images/dark.webp";
-import MicrosoftBack from "./images/phone2.jpg";
-export { HeroLight as Light };
-export { HeroDark as Dark };
-export { MicrosoftBack as Microsoft };
 
 export const githubUsername = "dotnetgoo";
 

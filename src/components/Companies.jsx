@@ -52,6 +52,9 @@ const StyledCompanies = styled.section
     margin-right:10px;
     border:none;
   }
+  .react-multi-carousel-track{
+    margin-bottom: 34px;
+  }
   @media screen and (max-width: 1083px) {
     h2{
       font-size:50px
@@ -109,7 +112,6 @@ const StyledCompanies = styled.section
 h2 {
   font-size: 27px;
   line-height: 52px;
-  margin-top: -59px;
 }
 .company_card img {
   width: 100px;
@@ -119,7 +121,11 @@ h2 {
 @media screen and (max-width: 440px) {
   .corusel_row{
     width:380px;
-  }}
+  }
+  .section{
+    min-height: 79vh;
+  }
+}
 @media screen and (max-width: 400px) {
   .corusel_row{
     width:350px;

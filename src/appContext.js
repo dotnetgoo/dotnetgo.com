@@ -1,7 +1,5 @@
 import React from "react";
-
 const AppContext = React.createContext();
-
 const AppProvider = function ({ children }) {
   const [theme, setTheme] = React.useState("light");
   const [isExpanded, setExpanded] = React.useState(false);

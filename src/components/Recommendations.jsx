@@ -54,6 +54,7 @@ const StyledInterview = styled.section`
     text-align: center;
     color: #000000;
     margin-bottom:47px;
+    margin:90px 0;
   }
   .rec_card p{
     font-family: 'Space Grotesk';
@@ -66,7 +67,7 @@ const StyledInterview = styled.section`
   }
   .rec_bg{
     position:absolute;
-    top: 4100px;
+    top: 3700px;
     left:0;
     width: 587px;
    height: 587px;
@@ -132,8 +133,8 @@ const StyledInterview = styled.section`
     }
   @media screen and (max-width:485px) {
     h2{
-      font-size: 27px;
-      line-height: 3px;
+      margin:10px 0;
+      font-size:27px;
     }
   }
 `;
@@ -145,7 +146,7 @@ export default function Recommendations() {
         <Container>
           <Container className="d-flex">
             <Title>
-              <h2>My Recommendations</h2>
+              <h2>Recommendations</h2>
             </Title>
           </Container>
           <Row className="align-items-center recc_cont" xs={1} md={3} lg={3} >

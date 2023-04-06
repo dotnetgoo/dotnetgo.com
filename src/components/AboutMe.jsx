@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Element } from "react-scroll";
 import Logo from "../images/person2.png";
 import { Col, Container } from "react-bootstrap";
 import bg from '../images/red.png';
@@ -205,26 +206,29 @@ h6{
 `;
 export default function AboutMe() {
   return (
-    <StyledHero className="about_cont">
-      <img src={bg} className="about_bg" alt="" />
-      <Container >
-        <div className="align-items-center about_sec">
-          <Col className="a_img_cont">
-            <div className="about_img_cont">
-              <img
-                src={Logo}
-                alt="React Logo"
-                className="about_img"
-              />
-            </div>
-          </Col>
-          <Col className="about_parags">
-            <h1 className="display-3 title about_title">About</h1>
-            <h4>Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher</h4>
-            <h6>Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast. The biggest programmer ever is the Allah. He created software called 'Life' and it is the most perfect software. Every part of this software works on realtime communication. This software also has an instruction - Koran. A person, who knows Koran will never struggle using the software 'Life'. In other words, life itself is like a programming. The life i told about has a lots of paths, but goals are the same. And I am on the best of these paths. So in .NET ...</h6>
-          </Col>
-        </div>
-      </Container>
-    </StyledHero>
+
+    <Element name={"About"} id="about">
+      <StyledHero className="about_cont">
+        <img src={bg} className="about_bg" alt="" />
+        <Container >
+          <div className="align-items-center about_sec">
+            <Col className="a_img_cont">
+              <div className="about_img_cont">
+                <img
+                  src={Logo}
+                  alt="React Logo"
+                  className="about_img"
+                />
+              </div>
+            </Col>
+            <Col className="about_parags">
+              <h1 className="display-3 title about_title">About</h1>
+              <h4>Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher</h4>
+              <h6>Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast. The biggest programmer ever is the Allah. He created software called 'Life' and it is the most perfect software. Every part of this software works on realtime communication. This software also has an instruction - Koran. A person, who knows Koran will never struggle using the software 'Life'. In other words, life itself is like a programming. The life i told about has a lots of paths, but goals are the same. And I am on the best of these paths. So in .NET ...</h6>
+            </Col>
+          </div>
+        </Container>
+      </StyledHero>
+    </Element>
   );
 }

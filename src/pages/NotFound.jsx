@@ -15,7 +15,6 @@ const StyledNotFound = styled.main`
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - var(--nav-height));
-
   span {
     font-size: 5rem;
   }
@@ -44,7 +43,6 @@ export default function NotFound() {
     },
     [name]
   );
-
   return (
     <>
       <NotFoundNavBar />

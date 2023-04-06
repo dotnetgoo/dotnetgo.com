@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { useAppContext } from "../appContext";
 import { Link } from "react-scroll";
@@ -19,6 +20,7 @@ const StyledNavbar = styled.header`
   margin-right:32px
   }
   .contact_me_link{
+    text-decoration:none;
    font-weight: 500;
    font-size: 16px;
    line-height: 20px;
@@ -147,7 +149,7 @@ export default function NavBar() {
               </Nav.Item>
             </Nav>
             <Nav>
-              <p className="contact_me_link">Contact Me</p>
+              <a className="contact_me_link" target="_blank" href="https://t.me/dotnetgo">Contact Me</a>
             </Nav>
           </Navbar.Collapse>
         </Container>
