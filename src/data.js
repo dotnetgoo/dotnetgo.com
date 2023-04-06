@@ -116,17 +116,17 @@ export const recommendationsData = [
   {
     id: 1,
     title: "Recommendations 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, Nihil voluptates porro molestiae atque in officia? quia animi maxime eos, pariatur hic. Nihil voluptates porro molestiae atque in officia?    "
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil."
   },
   {
     id: 2,
     title: "Recommendations 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, quia animi maxime eos, pariatur hic. Nihil voluptates porro molestiae atque in officia?    "
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil.   "
   },
   {
     id: 3,
     title: "Recommendations 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, quia animi maxime eos, pariatur hic.    "
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil.   "
   }
 ]
 export const resume = null;
