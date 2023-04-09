@@ -7,6 +7,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { FixedNavSpacer } from "./globalStyledComponents";
 import Logo from "../images/nav_logo.png";
 import NameImg from "../images/name.png";
+import { specialLinks } from "../data";
 const StyledNavbar = styled.header`
   .nav_links_cont {
     margin-left:100px
@@ -149,7 +150,7 @@ export default function NavBar() {
               </Nav.Item>
             </Nav>
             <Nav>
-              <a className="contact_me_link" target="_blank" href="https://t.me/dotnetgo">Contact Me</a>
+              <a className="contact_me_link" target="_blank" href={specialLinks.linkedin}>Contact Me</a>
             </Nav>
           </Navbar.Collapse>
         </Container>

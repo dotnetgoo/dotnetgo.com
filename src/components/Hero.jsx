@@ -3,6 +3,9 @@ import Logo from "../images/boss_img.jpg";
 import { Col, Container } from "react-bootstrap";
 import { FaGithub, FaTelegram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import bg from '../images/blue.png';
+
+// data
+import { specialLinks, HeroData } from "../data";
 const StyledHero = styled.header`
   .hero_title {
     font-style: normal;
@@ -221,37 +224,41 @@ export default function Hero() {
         <div className="align-items-center hero_sec">
           <Col className="hero_cont">
             <img src={bg} className="hero_bg" alt="bg" />
-            <h1 className="mb-3 display-3 title hero_title">Mukhammadkarim Tukhtaboyev</h1>
-            <h4>Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher</h4>
-            <h6>Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast.</h6>
+            <h1 className="mb-3 display-3 title hero_title">{HeroData.name}</h1>
+            <h4>{HeroData.profession}</h4>
+            <h6>{HeroData.description}</h6>
             <div className="d-flex align-items-center icon_cont">
               <p className="draw"></p>
               <p className="follow_title">Follow me:</p>
               <a
-                href="https://t.me/mukhammadkarim_tukhtaboev"
+                href={specialLinks.telegram}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
+                target="_blank" rel="noreferrer"
               >
                 <FaTelegram />
               </a>
               <a
-                href="https://github.com/dotnetgoo"
+                href={specialLinks.gitHub}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
+                target="_blank" rel="noreferrer"
               >
                 <FaGithub />
               </a>
               <a
-                href="https://www.linkedin.com/in/mukhammadkarim-tukhtaboev/"
+                href={specialLinks.linkedin}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
+                target="_blank" rel="noreferrer"
               >
                 <FaLinkedin />
               </a>
               <a
-                href="https://www.youtube.com/@JanobPanda"
+                href={specialLinks.youTube}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
+                target="_blank" rel="noreferrer"
               >
                 <FaYoutube />
               </a>

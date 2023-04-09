@@ -3,6 +3,10 @@ import { Element } from "react-scroll";
 import Logo from "../images/boss_img2.jpg";
 import { Col, Container } from "react-bootstrap";
 import bg from '../images/red.png';
+// data
+import { aboutData } from "../data";
+
+
 const StyledHero = styled.header`
 .about_sec{
   display:flex;
@@ -223,8 +227,8 @@ export default function AboutMe() {
             </Col>
             <Col className="about_parags">
               <h1 className="display-3 title about_title">About</h1>
-              <h4>Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher</h4>
-              <h6>Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast. The biggest programmer ever is the Allah. He created software called 'Life' and it is the most perfect software. Every part of this software works on realtime communication. This software also has an instruction - Koran. A person, who knows Koran will never struggle using the software 'Life'. In other words, life itself is like a programming. The life i told about has a lots of paths, but goals are the same. And I am on the best of these paths. So in .NET ...</h6>
+              <h4>{aboutData.title}</h4>
+              <h6>{aboutData.description}</h6>
             </Col>
           </div>
         </Container>

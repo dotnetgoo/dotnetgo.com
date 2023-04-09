@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Element } from "react-scroll";
 // Data
+import { resultData } from "../data";
 // Components
 import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
@@ -113,15 +114,15 @@ export default function Results() {
           <div className="align-items-center res_cont" xs={1} md={2} lg={3} >
             <div className=" result_card">
               <h3>Projects</h3>
-              <h4>547</h4>
+              <h4>{resultData.projects}</h4>
             </div>
             <div className=" result_card">
               <h3>Partners</h3>
-              <h4>584</h4>
+              <h4>{resultData.partners}</h4>
             </div>
             <div className=" result_card">
               <h3>Students</h3>
-              <h4>358</h4>
+              <h4>{resultData.students}</h4>
             </div>
           </div>
         </Container>

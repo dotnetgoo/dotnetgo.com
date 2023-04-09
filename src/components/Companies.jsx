@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import styled from "styled-components";
-// Data
+// data
+import { companyData } from "../data";
 import { Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 import company1 from "../images/comp1.png";
@@ -37,7 +38,7 @@ const StyledCompanies = styled.section
   }
   .company_card img{
     width: 205px;
-    height: 56px;
+    height: 50px;
   }
   .react-multiple-carousel__arrow--left , .react-multiple-carousel__arrow{
     display:none
@@ -169,24 +170,16 @@ export default function Companies() {
           </Title>
           <Row className="mt-3 align-items-center corusel_row" >
             <Carousel showDots={true} responsive={responsive}>
-              <div className="company_card">
-                <img className="product--image" src={company4} alt="product" />
-              </div>
-              <div className="company_card">
-                <img className="product--image" src={company1} alt="product" />
-              </div>
-              <div className="company_card">
-                <img className="product--image" src={company2} alt="product" />
-              </div>
-              <div className="company_card">
-                <img className="product--image" src={company4} alt="product" />
-              </div>
-              <div className="company_card">
-                <img className="product--image" src={company3} alt="product" />
-              </div>
-              <div className="company_card">
-                <img className="product--image" src={company4} alt="product" />
-              </div>
+              {companyData.map(element => {
+                return (
+                  <a href={element.link} style={{ textDecoration: "none" }} target="blank">
+                    <div className="company_card">
+                      <img className="product--image" src={element.id === 1 ? company1 : element.id === 2 ? company2 : element.id === 3 ? company3 : company4} alt="product" />
+                    </div>
+                  </a>
+                )
+              })}
+
             </Carousel>
           </Row>
 

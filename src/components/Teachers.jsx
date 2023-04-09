@@ -344,25 +344,25 @@ export default function Teachers() {
           {index === 1 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
             <img src={tech1} alt="" />
-            <h3>DJ Makhkamov</h3>
-            <h4>CTO at BARQ, M.Sc. ex Amazon. HIRING NOW</h4>
-            <p>Hello, everyone! I know, it's hard to pronounce, so I go by DJ. I am Customer Experience obsessed IT professional from Dubai. I started coding things about 13 years ago. For the last 6 years, I code less and take care more of managerial tasks. I miss coding and still do it once in a while.</p>
+            <h3>{teachersData[0].name}</h3>
+            <h4>{teachersData[0].skills}</h4>
+            <p>{teachersData[0].description}</p>
           </div>
 
           }
           {index === 2 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
             <img src={tech2} alt="" />
-            <h3>Nuriddin Kamardinov</h3>
-            <h4>Backend developer</h4>
-            <p>Hello, everyone! I know, it's hard to pronounce, so I go by DJ. I am Customer Experience obsessed IT professional from Dubai. I started coding things about 13 years ago. For the last 6 years, I code less and take care more of managerial tasks. I miss coding and still do it once in a while.</p>
+            <h3>{teachersData[1].name}</h3>
+            <h4>{teachersData[1].skills}</h4>
+            <p>{teachersData[1].description}</p>
           </div>}
           {index === 3 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
             <img src={tech3} alt="" />
-            <h3>Zarif Zafarovich</h3>
-            <h4>Backend developer</h4>
-            <p>Hello, everyone! I know, it's hard to pronounce, so I go by DJ. I am Customer Experience obsessed IT professional from Dubai. I started coding things about 13 years ago. For the last 6 years, I code less and take care more of managerial tasks. I miss coding and still do it once in a while.</p>
+            <h3>{teachersData[2].name}</h3>
+            <h4>{teachersData[2].skills}</h4>
+            <p>{teachersData[2].description}</p>
           </div>}
         </Container>
       </StyledAboutMe>

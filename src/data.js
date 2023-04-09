@@ -1,54 +1,64 @@
-import {
-  FaLink,
-} from "react-icons/fa";
-
-import Logo from "./images/logo.png";
-
-
-export const githubUsername = "dotnetgoo";
-
-export const Blog = <FaLink />;
-
 // ////////// DATA  SHU JOYDAN O'ZGARTIRSAYIZ SAYTDA HAM O'ZGARADI  ////////////////////
-
-export const companyData = [
-  {
-    id: 1,
-    name: "UNI SOLVE ",
-    link: "https://www.ubuy.uz/en/brand/uni-solve",
-  },
-  {
-    id: 2,
-    name: "UZCARD payment system",
-    link: "https://uzcard.uz/ru"
-  },
-  {
-    id: 3,
-    name: "TechCells ",
-    link: "https://techcells.com/"
-  },
-  {
-    id: 4,
-    name: "Najot Ta'lim",
-    link: "https://najottalim.uz/"
-  },
-  {
-    id: 5,
-    name: "BARQ App",
-    link: "https://barqapp.com/"
-  },
-  {
-    id: 6,
-    name: "Microsoft",
-    link: "https://www.microsoft.com/ru-ru"
-  },
-];
+export const specialLinks = {
+  telegram: "https://t.me/mukhammadkarim_tukhtaboev",
+  gitHub: "https://github.com/dotnetgoo",
+  linkedin: "https://www.linkedin.com/in/mukhammadkarim-tukhtaboev/",
+  youTube: "https://www.youtube.com/@JanobPanda"
+}
+// hero section data
+export const HeroData = {
+  name: "Mukhammadkarim Tukhtaboyev",
+  profession: "Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher",
+  description: "Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast."
+}
+// about section data
 export const aboutData = {
   title: "Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher",
   description: "Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast. The biggest programmer ever is the Allah. He created software called 'Life' and it is the most perfect software. Every part of this software works on realtime communication. This software also has an instruction - Koran. A person, who knows Koran will never struggle using the software 'Life'. In other words, life itself is like a programming. The life i told about has a lots of paths, but goals are the same. And I am on the best of these paths. So in .NET ..."
 }
+// interview section data
+export const interviewData = [
+  {
+    title: 'Special free open class on .NET',
+    name: 'Mukhammadkarim Tukhtaboyev',
+    link: "https://www.youtube.com/@JanobPanda/featured"
+  },
+  {
+    title: 'Special free open class on .NET',
+    name: 'Mukhammadkarim Tukhtaboyev',
+    link: "https://www.youtube.com/@JanobPanda/featured"
+  },
+  {
+    title: 'Special free open class on .NET',
+    name: 'Mukhammadkarim Tukhtaboyev',
+    link: "https://www.youtube.com/@JanobPanda/featured"
+  },
+]
+// company section data
+export const companyData = [
+  {
+    id: 1,
+    name: "TechCells ",
+    link: "https://techcells.com/"
+  },
+  {
+    id: 2,
+    name: "Najot Ta'lim",
+    link: "https://najottalim.uz/"
+  },
+  {
+    id: 3,
+    name: "BARQ App",
+    link: "https://barqapp.com/"
+  },
+  {
+    id: 4,
+    name: "Microsoft",
+    link: "https://www.microsoft.com/ru-ru"
+  },
+];
 
-///   src ga youtTubedagi videoni iframe src olinadi
+// interview section data
 export const interviewsData = [
   {
     id: 1,
@@ -69,23 +79,7 @@ export const interviewsData = [
     caption: ".NET bo'yicha maxsus bepul ochiq dars | Muhammadkarim To'xtaboyev",
   },
 ];
-export const mainGoals = [
-  {
-    id: 1,
-    name: "My goal 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  },
-  {
-    id: 2,
-    name: "My goal 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  },
-  {
-    id: 3,
-    name: "My goal 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  }
-]
+// teacher section data
 export const teachersData = [
   {
     id: 1,
@@ -106,6 +100,7 @@ export const teachersData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil, eligendi, voluptate vitae doloribus eius animi voluptatum debitis?"
   }
 ]
+// recommendations section data
 export const recommendationsData = [
   {
     id: 1,
@@ -123,11 +118,10 @@ export const recommendationsData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil.   "
   }
 ]
-export const resume = null;
-export const projectCardImages = [
-  {
-    name: "example-1",
-    image: Logo,
-  },
-];
+// result section data
+export const resultData = {
+  projects: 547,
+  partners: 584,
+  students: 358
+}
 

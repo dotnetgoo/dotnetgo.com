@@ -1,13 +1,11 @@
-/* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable jsx-a11y/anchor-has-content */
+
 import styled from "styled-components";
 import { Element } from "react-scroll";
-// Data
-// import { interviewsData } from "../data";
+// data
+import { interviewData } from "../data";
 // Components
 import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
-// import { Carousel } from 'react-bootstrap';
 import { useState } from "react";
 import bg from '../images/blue2.png';
 import slide_image_1 from '../images/interview.png';
@@ -529,9 +527,9 @@ export default function Interviews() {
           <div className="main_cont">
             <div className="interview_card" style={{ transform: index === 0 ? "scale(1)" : "scale(0.7)", zIndex: index === 0 ? 10 : 9, }}>
               <div className="card_info">
-                <h4>Special free open class on .NET</h4>
-                <h5>Mukhammadkarim Tukhtaboyev</h5>
-                <a href="https://www.youtube.com/@JanobPanda" target="_blank" style={{ textDecoration: "none" }}>
+                <h4>{interviewData[0].title}</h4>
+                <h5>{interviewData[0].name}</h5>
+                <a href={interviewData[0].link} target="blank" style={{ textDecoration: "none" }}>
                   <div className="play_video">
                     <div className="play_cont">
                       <img src={Polygon} alt="" />
@@ -543,9 +541,9 @@ export default function Interviews() {
             </div>
             <div className="interview_card_1" style={{ transform: index === 1 ? "scale(1)" : "scale(0.7)", zIndex: index === 1 ? 10 : 9, }}>
               <div className="card_info">
-                <h4>Special free open class on .NET</h4>
-                <h5>Mukhammadkarim Tukhtaboyev</h5>
-                <a href="https://www.youtube.com/@JanobPanda" target="_blank" style={{ textDecoration: "none" }}>
+                <h4>{interviewData[1].title}</h4>
+                <h5>{interviewData[1].name}</h5>
+                <a href={interviewData[1].link} target="blank" style={{ textDecoration: "none" }}>
                   <div className="play_video">
                     <div className="play_cont">
                       <img src={Polygon} alt="" />
@@ -557,9 +555,9 @@ export default function Interviews() {
             </div>
             <div className="interview_card_2" style={{ transform: index === 2 ? "scale(1)" : "scale(0.7)", zIndex: index === 2 ? 10 : 9, }}>
               <div className="card_info">
-                <h4>Special free open class on .NET</h4>
-                <h5>Mukhammadkarim Tukhtaboyev</h5>
-                <a href="https://www.youtube.com/@JanobPanda" target="_blank" style={{ textDecoration: "none" }}>
+                <h4>{interviewData[2].title}</h4>
+                <h5>{interviewData[2].name}</h5>
+                <a href={interviewData[2].link} target="blank" style={{ textDecoration: "none" }}>
                   <div className="play_video">
                     <div className="play_cont">
                       <img src={Polygon} alt="" />
