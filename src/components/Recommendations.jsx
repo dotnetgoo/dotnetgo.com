@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Element } from "react-scroll";
 // Data
 // Components
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 import { recommendationsData } from "../data";
 import bg from '../images/blue2.png';
@@ -13,6 +13,11 @@ const StyledInterview = styled.section`
   .img {
     width: 18rem;
     height: 18rem;
+  }
+  .recc_cont{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
   }
   .rec_card{
     box-sizing: border-box;    
@@ -149,7 +154,7 @@ export default function Recommendations() {
               <h2>Recommendations</h2>
             </Title>
           </Container>
-          <Row className="align-items-center recc_cont" xs={1} md={3} lg={3} >
+          <div className="align-items-center recc_cont" xs={1} md={3} lg={3} >
             {recommendationsData.map(element => {
               return (
                 <div className=" rec_card" key={element.id}>
@@ -159,7 +164,7 @@ export default function Recommendations() {
                 </div>
               )
             })}
-          </Row>
+          </div>
         </Container>
       </StyledInterview>
     </Element>

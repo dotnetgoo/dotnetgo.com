@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import Logo from "../images/person1.png";
+import Logo from "../images/boss_img.jpg";
 import { Col, Container } from "react-bootstrap";
 import { FaGithub, FaTelegram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import bg from '../images/blue.png';
-
 const StyledHero = styled.header`
   .hero_title {
     font-style: normal;
@@ -61,7 +60,7 @@ h6{
     color:#5300CE
   }
   .draw{
-    width: 80px;
+width: 80px;
 height: 2px;
 background: #000000;
 margin-right:18px;
@@ -76,9 +75,10 @@ margin-right:18px;
   }
   .img_cont{
     border-radius:50%;
-    width: 480px;
-    height:  480px;
+    width: 470px;
+    height:  470px;
     background:red;
+    margin-left:20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +267,6 @@ export default function Hero() {
             </div>
           </Col>
         </div>
-
       </Container>
     </StyledHero>
   );

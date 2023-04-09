@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Element } from "react-scroll";
 // Data
 // Components
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 const StyledInterview = styled.section`
   p {
@@ -11,6 +11,11 @@ const StyledInterview = styled.section`
   .img {
     width: 18rem;
     height: 18rem;
+  }
+  .res_cont{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
   }
   h2{
 font-weight: 700;
@@ -105,7 +110,7 @@ export default function Results() {
               <h2>Results</h2>
             </Title>
           </Container>
-          <Row className="align-items-center res_cont" xs={1} md={2} lg={3} >
+          <div className="align-items-center res_cont" xs={1} md={2} lg={3} >
             <div className=" result_card">
               <h3>Projects</h3>
               <h4>547</h4>
@@ -118,7 +123,7 @@ export default function Results() {
               <h3>Students</h3>
               <h4>358</h4>
             </div>
-          </Row>
+          </div>
         </Container>
       </StyledInterview>
     </Element>

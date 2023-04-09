@@ -1,7 +1,7 @@
 
 import styled from "styled-components";
 import { Element } from "react-scroll";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 import { CloseButton } from 'react-bootstrap';
 import { Title } from "./globalStyledComponents";
 import tech1 from "../images/tech1.jpg";
@@ -17,6 +17,11 @@ const StyledAboutMe = styled.section`
   .img {
     width: 18rem;
     height: 18rem;
+  }
+  .tech_cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .tech_card{
     display: flex;
@@ -225,6 +230,7 @@ const StyledAboutMe = styled.section`
 .tech_cont{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .tech_modal {
   width: 480px;
@@ -316,7 +322,7 @@ export default function Teachers() {
               <h2>Teachers</h2>
             </Title>
           </Container>
-          <Row className="align-items-center mb-5 tech_cont" xs={2} md={3} lg={3} >
+          <div className="align-items-center mb-5 tech_cont" xs={2} md={3} lg={3} >
             {
               teachersData.map(element => {
                 return (
@@ -334,7 +340,7 @@ export default function Teachers() {
                 )
               })
             }
-          </Row>
+          </div>
           {index === 1 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
             <img src={tech1} alt="" />

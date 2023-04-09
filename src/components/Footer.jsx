@@ -1,4 +1,4 @@
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 import Logo from "../images/footer_logo.png";
@@ -13,6 +13,8 @@ height: 245px;
   }
   .footer_cont{
     justify-content: space-between;
+    display: flex;
+    flex-direction:row;
   }
   .link_icons{
     color:#000;
@@ -57,7 +59,7 @@ export default function Footer() {
     <StyledFooter >
       <Element name={"Footer"} id="footer" className="footer_sec ">
         <Container>
-          <Row className="footer_cont" xs={2} md={2} lg={3} >
+          <div className="footer_cont" xs={2} md={2} lg={3} >
             <div style={{ display: "flex" }}>
               <img
                 alt="React Logo"
@@ -108,7 +110,7 @@ export default function Footer() {
               </a>
             </div>
 
-          </Row>
+          </div>
         </Container>
       </Element>
     </StyledFooter>

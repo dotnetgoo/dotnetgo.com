@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Element } from "react-scroll";
-import Logo from "../images/person2.png";
+import Logo from "../images/boss_img2.jpg";
 import { Col, Container } from "react-bootstrap";
 import bg from '../images/red.png';
 const StyledHero = styled.header`
