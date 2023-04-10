@@ -33,13 +33,11 @@ margin:90px 0;
     height: 237px;
     margin-right:24px;
     padding:14px;
-    margin-right:24px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-   
   }
   .result_card h3{
     font-weight: 700;
@@ -74,7 +72,6 @@ color: #5300CE;
     .result_card {
       width: 163px;
       height: 237px;
-      margin-right: 14px;
       margin-top: 24px;
   }
   .result_card h4 {

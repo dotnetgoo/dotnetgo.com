@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Col, Container } from "react-bootstrap";
-import { FaGithub, FaTelegram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTelegram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
 import bg from '../images/blue.png';
 
 // data
@@ -196,12 +196,17 @@ margin-right:18px;
     h4 {
       line-height: 26px;
       width: 357px;
-      font-size: 18px;}
-      h6 {
+      font-size: 18px;
+    text-align:center;
+    }
+    h6{
+        text-align:center;
         width: 345px;
-        font-size: 12px;}
-        .about_img_cont {
-          margin-top: 67px;
+        font-size: 12px;
+      }
+        .img_cont {
+          margin-top: 57px;
+          margin-left:0;
       }
   }
   @media screen and (max-width:400px) {
@@ -260,6 +265,14 @@ export default function Hero() {
                 target="_blank" rel="noreferrer"
               >
                 <FaYoutube />
+              </a>
+              <a
+                href={specialLinks.twitter}
+                aria-label="Check out my GitHub profile."
+                className="link_icons"
+                target="_blank" rel="noreferrer"
+              >
+                <FaTwitter />
               </a>
             </div>
           </Col>

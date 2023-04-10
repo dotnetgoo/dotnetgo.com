@@ -8,16 +8,15 @@ import comp4 from "./images/comp4.png";
 import tech1 from "./images/tech1.jpg";
 import tech2 from "./images/tech2.jpg";
 import tech3 from "./images/tech3.jpg";
-import interview from "./images/interview.png";
-import interview2 from "./images/interview2.png";
-import intervie3 from "./images/interview3.png";
-
-
+import interview from "./images/interview.jpg";
+import interview2 from "./images/interview2.jpg";
+import intervie3 from "./images/interview3.jpg";
 export const specialLinks = {
   telegram: "https://t.me/mukhammadkarim_tukhtaboev",
   gitHub: "https://github.com/dotnetgoo",
   linkedin: "https://www.linkedin.com/in/mukhammadkarim-tukhtaboev/",
-  youTube: "https://www.youtube.com/@JanobPanda"
+  youTube: "https://www.youtube.com/@JanobPanda",
+  twitter: "https://twitter.com/MrTukhtaboev",
 }
 export const images = {
   about_img, hero_img, comp1, comp2, comp3, comp4, tech1, tech2, tech3, interview, interview2, intervie3
@@ -36,19 +35,19 @@ export const aboutData = {
 // interview section data
 export const interviewData = [
   {
-    title: 'Special free open class on .NET',
+    title: ".NET bo'yicha maxsus bepul ochiq dars | Muhammadkarim To'xtaboyev",
     name: 'Mukhammadkarim Tukhtaboyev',
-    link: "https://www.youtube.com/@JanobPanda/featured"
+    link: "https://www.youtube.com/watch?v=GABfObOjbOE"
   },
   {
-    title: 'Special free open class on .NET',
+    title: "Qanday Microsoft MVP Bo'lish Mumkin! Muhammad Karim To'xtaboyev Qanday MVP Bo'ldi MVP Bo'lish Sirlar",
     name: 'Mukhammadkarim Tukhtaboyev',
-    link: "https://www.youtube.com/@JanobPanda/featured"
+    link: "https://www.youtube.com/watch?v=rsEd9BCTuNY&t=1195s"
   },
   {
-    title: 'Special free open class on .NET',
+    title: ".NET meetup",
     name: 'Mukhammadkarim Tukhtaboyev',
-    link: "https://www.youtube.com/@JanobPanda/featured"
+    link: "https://www.youtube.com/watch?v=tVfJXSK2NTs"
   },
 ]
 // company section data

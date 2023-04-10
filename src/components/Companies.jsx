@@ -168,7 +168,7 @@ export default function Companies() {
             <Carousel showDots={true} responsive={responsive}>
               {companyData.map(element => {
                 return (
-                  <a href={element.link} style={{ textDecoration: "none" }} target="blank">
+                  <a href={element.link} style={{ textDecoration: "none" }} target="blank" key={element}>
                     <div className="company_card">
                       <img className="product--image" src={element.id === 1 ? images.comp1 : element.id === 2 ? images.comp2 : element.id === 3 ? images.comp3 : images.comp4} alt="product" />
                     </div>

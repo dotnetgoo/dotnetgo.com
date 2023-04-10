@@ -51,6 +51,8 @@ const StyledInterview = styled.section`
       z-index:10;
       transition: transform 150ms ease-in-out;
       transform: scale(0.7);
+      background-position: center;
+      background-size: cover; 
       }
     .interview_card_1{
       position:absolute;
@@ -63,6 +65,8 @@ const StyledInterview = styled.section`
       z-index:9;
       transition: transform 150ms ease-in-out;
       transform: scale(0.7);
+      background-position: center;
+      background-size: cover; 
       }
     .interview_card_2{
       position:absolute;
@@ -75,6 +79,8 @@ const StyledInterview = styled.section`
       z-index:9;
       transition: transform 150ms ease-in-out;
       transform: scale(0.7);
+      background-position: center;
+      background-size: cover; 
       }
       .main_cont{
      position:relative       

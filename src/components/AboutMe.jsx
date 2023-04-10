@@ -84,8 +84,8 @@ h6{
     border-radius:50%;
     margin-top: 224px;
     margin-right:30px;
-    width: 480px;
-    height:  480px;
+    width: 470px;
+    height:  470px;
     background:red;
     display: flex;
     justify-content: center;
