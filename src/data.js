@@ -1,60 +1,81 @@
-import {
-  FaLink,
-} from "react-icons/fa";
-
-import Logo from "./images/logo.png";
-
-import HeroLight from "./images/light.jpg";
-import HeroDark from "./images/dark.webp";
-import MicrosoftBack from "./images/phone2.jpg";
-export { HeroLight as Light };
-export { HeroDark as Dark };
-export { MicrosoftBack as Microsoft };
-
-export const githubUsername = "dotnetgoo";
-
-export const Blog = <FaLink />;
-
 // ////////// DATA  SHU JOYDAN O'ZGARTIRSAYIZ SAYTDA HAM O'ZGARADI  ////////////////////
+import about_img from "./images/about_img.jpg";
+import hero_img from "./images/hero_img.jpg";
+import comp1 from "./images/comp1.png";
+import comp2 from "./images/comp2.png";
+import comp3 from "./images/comp3.png";
+import comp4 from "./images/comp4.png";
+import tech1 from "./images/tech1.jpg";
+import tech2 from "./images/tech2.jpg";
+import tech3 from "./images/tech3.jpg";
+import interview from "./images/interview.png";
+import interview2 from "./images/interview2.png";
+import intervie3 from "./images/interview3.png";
 
-export const companyData = [
-  {
-    id: 1,
-    name: "UNI SOLVE ",
-    link: "https://www.ubuy.uz/en/brand/uni-solve",
-  },
-  {
-    id: 2,
-    name: "UZCARD payment system",
-    link: "https://uzcard.uz/ru"
-  },
-  {
-    id: 3,
-    name: "TechCells ",
-    link: "https://techcells.com/"
-  },
-  {
-    id: 4,
-    name: "Najot Ta'lim",
-    link: "https://najottalim.uz/"
-  },
-  {
-    id: 5,
-    name: "BARQ App",
-    link: "https://barqapp.com/"
-  },
-  {
-    id: 6,
-    name: "Microsoft",
-    link: "https://www.microsoft.com/ru-ru"
-  },
-];
+
+export const specialLinks = {
+  telegram: "https://t.me/mukhammadkarim_tukhtaboev",
+  gitHub: "https://github.com/dotnetgoo",
+  linkedin: "https://www.linkedin.com/in/mukhammadkarim-tukhtaboev/",
+  youTube: "https://www.youtube.com/@JanobPanda"
+}
+export const images = {
+  about_img, hero_img, comp1, comp2, comp3, comp4, tech1, tech2, tech3, interview, interview2, intervie3
+}
+// hero section data
+export const HeroData = {
+  name: "Mukhammadkarim Tukhtaboyev",
+  profession: "Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher",
+  description: "Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast."
+}
+// about section data
 export const aboutData = {
   title: "Microsoft MVP | Software Engineer @ BARQ App | Lead Teacher",
   description: "Microsoft MVP, Software Engineer, Instructor, Singer, Founder of .NET Community in Uzbekistan, Ibn Sina Enthusiast. The biggest programmer ever is the Allah. He created software called 'Life' and it is the most perfect software. Every part of this software works on realtime communication. This software also has an instruction - Koran. A person, who knows Koran will never struggle using the software 'Life'. In other words, life itself is like a programming. The life i told about has a lots of paths, but goals are the same. And I am on the best of these paths. So in .NET ..."
 }
+// interview section data
+export const interviewData = [
+  {
+    title: 'Special free open class on .NET',
+    name: 'Mukhammadkarim Tukhtaboyev',
+    link: "https://www.youtube.com/@JanobPanda/featured"
+  },
+  {
+    title: 'Special free open class on .NET',
+    name: 'Mukhammadkarim Tukhtaboyev',
+    link: "https://www.youtube.com/@JanobPanda/featured"
+  },
+  {
+    title: 'Special free open class on .NET',
+    name: 'Mukhammadkarim Tukhtaboyev',
+    link: "https://www.youtube.com/@JanobPanda/featured"
+  },
+]
+// company section data
+export const companyData = [
+  {
+    id: 1,
+    name: "TechCells ",
+    link: "https://techcells.com/"
+  },
+  {
+    id: 2,
+    name: "Najot Ta'lim",
+    link: "https://najottalim.uz/"
+  },
+  {
+    id: 3,
+    name: "BARQ App",
+    link: "https://barqapp.com/"
+  },
+  {
+    id: 4,
+    name: "Microsoft",
+    link: "https://www.microsoft.com/ru-ru"
+  },
+];
 
-///   src ga youtTubedagi videoni iframe src olinadi
+// interview section data
 export const interviewsData = [
   {
     id: 1,
@@ -75,23 +96,7 @@ export const interviewsData = [
     caption: ".NET bo'yicha maxsus bepul ochiq dars | Muhammadkarim To'xtaboyev",
   },
 ];
-export const mainGoals = [
-  {
-    id: 1,
-    name: "My goal 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  },
-  {
-    id: 2,
-    name: "My goal 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  },
-  {
-    id: 3,
-    name: "My goal 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. laudantium doloribus iusto perferendis minima quis veritatis, quisquam voluptate laboriosam, optio labore neque tenetur dolores ea error tempore. Error, sunt."
-  }
-]
+// teacher section data
 export const teachersData = [
   {
     id: 1,
@@ -112,28 +117,28 @@ export const teachersData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil, eligendi, voluptate vitae doloribus eius animi voluptatum debitis?"
   }
 ]
+// recommendations section data
 export const recommendationsData = [
   {
     id: 1,
     title: "Recommendations 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, Nihil voluptates porro molestiae atque in officia? quia animi maxime eos, pariatur hic. Nihil voluptates porro molestiae atque in officia?    "
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil."
   },
   {
     id: 2,
     title: "Recommendations 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, quia animi maxime eos, pariatur hic. Nihil voluptates porro molestiae atque in officia?    "
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil.   "
   },
   {
     id: 3,
     title: "Recommendations 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quaerat officia tenetur aut, temporibus eum sit, quia animi maxime eos, pariatur hic.    "
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde ab error nulla modi cumque! Nisi aut quaerat, pariatur blanditiis nihil.   "
   }
 ]
-export const resume = null;
-export const projectCardImages = [
-  {
-    name: "example-1",
-    image: Logo,
-  },
-];
+// result section data
+export const resultData = {
+  projects: 547,
+  partners: 584,
+  students: 358
+}
 

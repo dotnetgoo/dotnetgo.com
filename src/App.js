@@ -6,7 +6,6 @@ import {
   selectError,
   selectIsLoading,
 } from "./pages/homeSlice";
-import { fetchGitHubReops } from "./pages/allProjectsSlice";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 // Components
@@ -16,7 +15,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import GlobalStyles from "./components/GlobalStyles";
 // Pages
 import Home from "./pages/Home";
-import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
 
 const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -45,7 +43,6 @@ export default function App() {
         darkMode ? setTheme("dark") : setTheme("light");
       updateTheme();
       dispatch(fetchGitHubInfo());
-      dispatch(fetchGitHubReops());
     },
     [setTheme, dispatch]
   );
@@ -82,7 +79,6 @@ export default function App() {
           <GlobalStyles />
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/All-Projects" element={<AllProjects />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ThemeProvider>

@@ -1,65 +1,184 @@
-import { useAppContext } from "../appContext";
 import { Element } from "react-scroll";
 import styled from "styled-components";
-// Data
-import { companyData, resume } from "../data";
-import Light from "../images/bg-about.jpg";
-// Components
-import { Button, Col, Container, Row } from "react-bootstrap";
+// data
+import { companyData, images } from "../data";
+import { Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
-import company1 from "../images/comp1.jpg";
-import company2 from "../images/comp2.jpg";
-import company3 from "../images/comp3.jpg";
-import company4 from "../images/comp4.jpg";
-import company5 from "../images/comp5.jpg";
-import company6 from "../images/Microsoft.png";
-const StyledCompanies = styled.section`  p {
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+const StyledCompanies = styled.section
+  `  p {
     font-size: 1.25rem;
   }
   .img {
-    width: 18rem;
+    width: 22rem;
     height: 18rem;
   }
-  {
-    background: ${({ theme }) => theme.name === "light" ? `linear-gradient(#ebf8e1, #ebf8e1, #ebf8e1), url(${Light}) ` : `linear-gradient(#27272A, #27272A, #ebf8e1)`
-  }}
+  h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 82px;
+    text-align: center;
+    color: #000000;
+    margin-top:100px;
+    margin-bottom:30px;
+  }
+  .company_card{
+    width: 282px;
+    height: 160.43px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .company_card img{
+    width: 205px;
+    height: 50px;
+  }
+  .react-multiple-carousel__arrow--left , .react-multiple-carousel__arrow{
+    display:none
+  }
+  .react-multi-carousel-dot--active button{
+    background:#5300CE;
+  }
+  .react-multi-carousel-dot button{
+    width: 37px;
+    height: 15px;        
+    border-radius: 10px;
+    margin-right:10px;
+    border:none;
+  }
+  .react-multi-carousel-track{
+    margin-bottom: 34px;
+  }
+  @media screen and (max-width: 1083px) {
+    h2{
+      font-size:50px
+    }
+  }
+  @media screen and (max-width: 993px) {
+    .company_card {
+      width: 225px;
+      height: 125.43px;}
+      .company_card img {
+        width: 179px;
+        height: 37px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    h2{
+      font-size:36px;
+      line-height: 52px;
+      margin-top: 30px;
+    }
+    .company_card img {
+      width: 109px;
+      height: 27px;
+  }
+  .company_card {
+    width: 140px;
+    height: 75.43px;
+}
+.react-multi-carousel-dot button{
+  width: 27px;
+  height: 10px;        
+  border-radius: 10px;
+  margin-right:10px;
+  border:none;
+}
+}
+@media screen and (max-width: 576px) {
+  .corusel_row{
+    width:520px
+  }
+}
+@media screen and (max-width: 520px) {
+  .corusel_row{
+    width:480px
+  }
+}
+@media screen and (max-width: 485px) {
+  .corusel_row{
+    width:420px;
+  }
+  .company_card {
+    width: 122px;
+    height: 65.43px;
+}
+h2 {
+  font-size: 27px;
+  line-height: 52px;
+}
+.company_card img {
+  width: 100px;
+  height: 23px;
+}
+}
+@media screen and (max-width: 440px) {
+  .corusel_row{
+    width:380px;
+  }
+  .section{
+    min-height: 79vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .corusel_row{
+    width:350px;
+  }
+  .company_card {
+    width: 102px;
+    height: 60px;
+}
+.company_card img {
+  width: 90px;
+  height: 20px;
+}
+}
 `;
-
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 1024 },
+    items: 3,
+    slidesToSlide: 2,
+  },
+  desktop: {
+    breakpoint: { max: 1024, min: 800 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 800, min: 464 },
+    items: 3,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 3,
+  },
+};
 export default function Companies() {
-  const { theme } = useAppContext();
   return (
     <Element name={"Companies"} id="companies">
       <StyledCompanies className="section">
         <Container className="text-center">
           <Title>
-            <h2>The companies I worked for</h2>
-            <div className="underline"></div>
+            <h2 className="mb-5">The companies I worked for</h2>
           </Title>
-          <Row className="mt-3 align-items-center" xs={2} md={2} lg={3} >
-            {companyData.map((skills) => {
-              return (
-                <Col className="my-md-4" key={skills.id} >
-                  <a href={skills.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                    <figure>
-                      <img src={skills.id === 1 ? company1 : skills.id === 2 ? company2 : skills.id === 3 ? company3 : skills.id === 4 ? company4 : skills.id === 5 ? company5 : company6} alt="" style={{ width: "8rem", height: "7rem" }} />
-                      <p className="mt-2" style={{ color: theme === "light" ? "#013684" : "#fff", textDecoration: "none" }}>{skills.name}</p>
-                    </figure>
+          <Row className="mt-3 align-items-center corusel_row" >
+            <Carousel showDots={true} responsive={responsive}>
+              {companyData.map(element => {
+                return (
+                  <a href={element.link} style={{ textDecoration: "none" }} target="blank">
+                    <div className="company_card">
+                      <img className="product--image" src={element.id === 1 ? images.comp1 : element.id === 2 ? images.comp2 : element.id === 3 ? images.comp3 : images.comp4} alt="product" />
+                    </div>
                   </a>
-                </Col>
-              );
-            })}
+                )
+              })}
+
+            </Carousel>
           </Row>
-          {resume && (
-            <a href={resume}>
-              <Button
-                size="lg"
-                variant={theme === "light" ? "outline-dark" : "outline-light"}
-                className="mt-5"
-              >
-                R&eacute;sum&eacute;
-              </Button>
-            </a>
-          )}
+
         </Container>
       </StyledCompanies>
     </Element>

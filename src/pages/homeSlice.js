@@ -1,13 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // Data
-import { githubUsername } from "../data";
 
 const initialState = {
   isLoading: true,
   error: "",
   data: [],
 };
-
 export const url = `https://api.github.com/users/dotnetgoo`;
 export const fetchGitHubInfo = createAsyncThunk(
   "home/fetchGitHubInfo",
@@ -23,7 +21,7 @@ export const fetchGitHubInfo = createAsyncThunk(
       return data;
     } catch (err) {
       return rejectWithValue(
-        `Error: ${err.message}, check username in data.js (currently ${githubUsername})`
+        `Something went wrong! Please try again `
       );
     }
   }

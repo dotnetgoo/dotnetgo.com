@@ -29,11 +29,6 @@ body {
 a:hover {
   cursor: pointer;
 }
-
-.navbar {
-  border-bottom: var(--border);
-}
-
 .link-icons {
   line-height: 0;
   font-size: 2.25rem;
@@ -45,10 +40,8 @@ a:hover {
 }
 
 .section {
-  min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: var(--nav-height) 0;
 }
 
 .title {

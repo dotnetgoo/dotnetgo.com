@@ -1,10 +1,10 @@
 import React from "react";
 import { useAppContext } from "../appContext";
 import styled, { keyframes } from "styled-components";
-import { Link } from "react-scroll/modules";
+// import { Link } from "react-scroll/modules";
 // Icons
 import { GiSunflower, GiMoon } from "react-icons/gi";
-import { FaChevronCircleUp } from "react-icons/fa";
+// import { FaChevronCircleUp } from "react-icons/fa";
 
 // Animations
 export const Spin = keyframes`
@@ -36,7 +36,6 @@ export const Loading = styled.div`
 
 // Spacer for fixed Navigation bar
 export const FixedNavSpacer = styled.div`
-  height: var(--nav-height);
 `;
 
 // Theme Toggle
@@ -149,9 +148,9 @@ export function BackToTop({ home }) {
 
   return (
     <StyledDiv ref={up}>
-      <Link to={home} className="link-icons">
-        <FaChevronCircleUp />
-      </Link>
+      {/* <Link to={home} className="link-icons" style={{ background: "#000" }}>
+        <p style={{ transform: "rotate(-90deg)", fontSize: "14px", color: "#fff" }}>Back to Top</p>
+      </Link> */}
     </StyledDiv>
   );
 }

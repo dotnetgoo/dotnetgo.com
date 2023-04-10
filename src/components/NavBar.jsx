@@ -1,55 +1,98 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { useAppContext } from "../appContext";
 import { Link } from "react-scroll";
+import styled from "styled-components";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { FixedNavSpacer, ToggleSwitch } from "./globalStyledComponents";
-import Logo from "../images/logo.png";
+import { FixedNavSpacer } from "./globalStyledComponents";
+import Logo from "../images/nav_logo.png";
+import NameImg from "../images/name.png";
+import { specialLinks } from "../data";
+const StyledNavbar = styled.header`
+  .nav_links_cont {
+    margin-left:100px
+  } 
+  .nav-link{
+  color:black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right:32px
+  }
+  .contact_me_link{
+    text-decoration:none;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 20px;
+   color: #FFFFFF;
+   background: #5300CE;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   width: 160px;
+   height: 52px;
+   cursor:pointer;
+   margin-top:10px;
+  } @media screen and (max-width: 1240px) {
+    .nav_links_cont {
+      margin-left: 36px;
+  }}
+  @media screen and (max-width: 1083px) {
+    .nav-link {
+      margin-right: 20px;
+  }
+  }
+  @media screen and (max-width: 1320px) {
+  }
+  @media screen and (max-width: 900px) {
+  }
+  @media screen and (max-width: 600px) {
+  }
+  @media screen and (max-width:360px) {
+  }
+`;
 export default function NavBar() {
   const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
   return (
-    <>
+    <StyledNavbar>
       <FixedNavSpacer />
       <Navbar
         id="nav"
         collapseOnSelect={true}
         expand="lg"
         expanded={isExpanded}
-        bg={theme === "light" ? "light" : "dark"}
         variant={theme === "light" ? "light" : "dark"}
-        fixed="top"
       >
-        <Container>
-          <Navbar.Brand>
-            <img
-              alt="React Logo"
-              src={Logo}
-              width="35"
-              height="35"
-              className={
-                theme === "light"
-                  ? "bg-dark rounded-circle"
-                  : "bg-light rounded-circle"
-              }
-            />
+        <Container >
+          <Navbar.Brand >
+            <div style={{ display: "flex" }}>
+              <img
+                onClick={closeExpanded}
+                alt="React Logo"
+                src={Logo}
+                width="40"
+                height="40"
+              />
+              <img
+                onClick={closeExpanded}
+                alt="React Logo"
+                src={NameImg}
+                width="120"
+                height="40"
+                style={{ marginLeft: "8px" }}
+              />
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             onClick={toggleExpanded}
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav navbarScroll className="me-auto">
-              <Nav.Item>
-                <Link
-                  to={"Home"}
-                  spy={true}
-                  activeClass="active"
-                  className="nav-link"
-                  onClick={closeExpanded}
-                >
-                  Home
-                </Link>
-              </Nav.Item>
-
+            <Nav navbarScroll className="me-auto nav_links_cont" >
               <Nav.Item>
                 <Link
                   to={"About"}
@@ -58,7 +101,7 @@ export default function NavBar() {
                   className="nav-link"
                   onClick={closeExpanded}
                 >
-                  About Me
+                  About
                 </Link>
               </Nav.Item>
               <Nav.Item>
@@ -85,24 +128,13 @@ export default function NavBar() {
               </Nav.Item>
               <Nav.Item>
                 <Link
-                  to={"Goals"}
-                  spy={true}
-                  activeClass="active"
-                  className="nav-link"
-                  onClick={closeExpanded}
-                >
-                  My Goals
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
                   to={"Teachers"}
                   spy={true}
                   activeClass="active"
                   className="nav-link"
                   onClick={closeExpanded}
                 >
-                  My Teachers
+                  Teachers
                 </Link>
               </Nav.Item>
               <Nav.Item>
@@ -118,11 +150,11 @@ export default function NavBar() {
               </Nav.Item>
             </Nav>
             <Nav>
-              <ToggleSwitch />
+              <a className="contact_me_link" target="_blank" href={specialLinks.linkedin}>Contact Me</a>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </StyledNavbar>
   );
 }
