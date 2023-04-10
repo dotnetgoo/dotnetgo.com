@@ -1,12 +1,9 @@
 import styled from "styled-components";
 import { Element } from "react-scroll";
-import Logo from "../images/boss_img2.jpg";
 import { Col, Container } from "react-bootstrap";
 import bg from '../images/red.png';
 // data
-import { aboutData } from "../data";
-
-
+import { aboutData, images } from "../data";
 const StyledHero = styled.header`
 .about_sec{
   display:flex;
@@ -219,7 +216,7 @@ export default function AboutMe() {
             <Col className="a_img_cont">
               <div className="about_img_cont">
                 <img
-                  src={Logo}
+                  src={images.about_img}
                   alt="React Logo"
                   className="about_img"
                 />

@@ -2,15 +2,12 @@
 import styled from "styled-components";
 import { Element } from "react-scroll";
 // data
-import { interviewData } from "../data";
+import { interviewData, images } from "../data";
 // Components
 import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 import { useState } from "react";
 import bg from '../images/blue2.png';
-import slide_image_1 from '../images/interview.png';
-import slide_image_2 from '../images/interview2.png';
-import slide_image_3 from '../images/interview3.png';
 import { GrNext, GrPrevious } from 'react-icons/gr';
 import Polygon from '../images/play.jpg';
 const StyledInterview = styled.section`
@@ -49,7 +46,7 @@ const StyledInterview = styled.section`
       left:80px;
       width: 964px;
       height: 514px;
-      background: url(${slide_image_1});
+      background: url(${images.interview});
       border-radius: 30px;
       z-index:10;
       transition: transform 150ms ease-in-out;
@@ -61,7 +58,7 @@ const StyledInterview = styled.section`
       left:80px;
       width: 964px;
       height: 514px;
-      background: url(${slide_image_2});
+      background: url(${images.interview2});
       border-radius: 30px;
       z-index:9;
       transition: transform 150ms ease-in-out;
@@ -73,7 +70,7 @@ const StyledInterview = styled.section`
       left:80px;
       width: 964px;
       height: 514px;
-      background: url(${slide_image_3});
+      background: url(${images.intervie3});
       border-radius: 30px;
       z-index:9;
       transition: transform 150ms ease-in-out;

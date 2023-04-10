@@ -1,13 +1,9 @@
 import { Element } from "react-scroll";
 import styled from "styled-components";
 // data
-import { companyData } from "../data";
+import { companyData, images } from "../data";
 import { Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
-import company1 from "../images/comp1.png";
-import company2 from "../images/comp2.png";
-import company3 from "../images/comp3.png";
-import company4 from "../images/comp4.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const StyledCompanies = styled.section
@@ -174,7 +170,7 @@ export default function Companies() {
                 return (
                   <a href={element.link} style={{ textDecoration: "none" }} target="blank">
                     <div className="company_card">
-                      <img className="product--image" src={element.id === 1 ? company1 : element.id === 2 ? company2 : element.id === 3 ? company3 : company4} alt="product" />
+                      <img className="product--image" src={element.id === 1 ? images.comp1 : element.id === 2 ? images.comp2 : element.id === 3 ? images.comp3 : images.comp4} alt="product" />
                     </div>
                   </a>
                 )

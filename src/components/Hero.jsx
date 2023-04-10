@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import Logo from "../images/boss_img.jpg";
 import { Col, Container } from "react-bootstrap";
 import { FaGithub, FaTelegram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import bg from '../images/blue.png';
 
 // data
-import { specialLinks, HeroData } from "../data";
+import { specialLinks, HeroData, images } from "../data";
 const StyledHero = styled.header`
   .hero_title {
     font-style: normal;
@@ -267,7 +266,7 @@ export default function Hero() {
           <Col>
             <div className="img_cont">
               <img
-                src={Logo}
+                src={images.hero_img}
                 alt="React Logo"
                 className="hero_img"
               />

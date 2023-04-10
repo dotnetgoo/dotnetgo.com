@@ -4,10 +4,7 @@ import { Element } from "react-scroll";
 import { Col, Container } from "react-bootstrap";
 import { CloseButton } from 'react-bootstrap';
 import { Title } from "./globalStyledComponents";
-import tech1 from "../images/tech1.jpg";
-import tech2 from "../images/tech2.jpg";
-import tech3 from "../images/tech3.jpg";
-import { teachersData } from "../data";
+import { teachersData, images } from "../data";
 import bg from '../images/red.png';
 import { useState } from "react";
 const StyledAboutMe = styled.section`
@@ -309,7 +306,6 @@ line-height: 18px;
 
 
 `;
-
 export default function Teachers() {
   const [index, setindex] = useState(0)
   return (
@@ -328,7 +324,7 @@ export default function Teachers() {
                 return (
                   <Col className="text-center tech_card" key={element.id}>
                     <img
-                      src={element.id === 1 ? tech1 : element.id === 2 ? tech2 : tech3}
+                      src={element.id === 1 ? images.tech1 : element.id === 2 ? images.tech2 : images.tech3}
                       alt="GitHub Avatar"
                       loading="lazy"
                       className="mx-auto rounded-circle"
@@ -343,7 +339,7 @@ export default function Teachers() {
           </div>
           {index === 1 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
-            <img src={tech1} alt="" />
+            <img src={images.tech1} alt="" />
             <h3>{teachersData[0].name}</h3>
             <h4>{teachersData[0].skills}</h4>
             <p>{teachersData[0].description}</p>
@@ -352,14 +348,14 @@ export default function Teachers() {
           }
           {index === 2 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
-            <img src={tech2} alt="" />
+            <img src={images.tech2} alt="" />
             <h3>{teachersData[1].name}</h3>
             <h4>{teachersData[1].skills}</h4>
             <p>{teachersData[1].description}</p>
           </div>}
           {index === 3 && <div className="tech_modal">
             <CloseButton className="close_icon" onClick={() => { setindex(0) }} />
-            <img src={tech3} alt="" />
+            <img src={images.tech3} alt="" />
             <h3>{teachersData[2].name}</h3>
             <h4>{teachersData[2].skills}</h4>
             <p>{teachersData[2].description}</p>

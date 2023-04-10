@@ -1,9 +1,26 @@
 // ////////// DATA  SHU JOYDAN O'ZGARTIRSAYIZ SAYTDA HAM O'ZGARADI  ////////////////////
+import about_img from "./images/about_img.jpg";
+import hero_img from "./images/hero_img.jpg";
+import comp1 from "./images/comp1.png";
+import comp2 from "./images/comp2.png";
+import comp3 from "./images/comp3.png";
+import comp4 from "./images/comp4.png";
+import tech1 from "./images/tech1.jpg";
+import tech2 from "./images/tech2.jpg";
+import tech3 from "./images/tech3.jpg";
+import interview from "./images/interview.png";
+import interview2 from "./images/interview2.png";
+import intervie3 from "./images/interview3.png";
+
+
 export const specialLinks = {
   telegram: "https://t.me/mukhammadkarim_tukhtaboev",
   gitHub: "https://github.com/dotnetgoo",
   linkedin: "https://www.linkedin.com/in/mukhammadkarim-tukhtaboev/",
   youTube: "https://www.youtube.com/@JanobPanda"
+}
+export const images = {
+  about_img, hero_img, comp1, comp2, comp3, comp4, tech1, tech2, tech3, interview, interview2, intervie3
 }
 // hero section data
 export const HeroData = {
