@@ -129,7 +129,7 @@ const StyledInterview = styled.section`
       height: 300px;
     }
   }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 767px) {
     .recc_cont{
       display: flex;
       flex-direction:column;
@@ -153,7 +153,7 @@ export default function Recommendations() {
               <h2>Recommendations</h2>
             </Title>
           </Container>
-          <div className="align-items-center recc_cont" xs={1} md={3} lg={3} >
+          <div className="align-items-center recc_cont" >
             {recommendationsData.map(element => {
               return (
                 <div className="rec_card" key={element.id}>

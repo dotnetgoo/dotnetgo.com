@@ -223,7 +223,7 @@ const StyledAboutMe = styled.section`
       padding: 18px 30px;
       }
   }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 767px) {
 .tech_cont{
   display: flex;
   justify-content: center;
@@ -318,7 +318,7 @@ export default function Teachers() {
               <h2>Teachers</h2>
             </Title>
           </Container>
-          <div className="align-items-center mb-5 tech_cont" xs={2} md={3} lg={3} >
+          <div className="align-items-center mb-5 tech_cont"  >
             {
               teachersData.map(element => {
                 return (

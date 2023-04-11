@@ -190,6 +190,7 @@ h6{
             font-size: 12px;}
             .about_img_cont {
               margin-top: 67px;
+              margin-right:0;
           }
       }
       @media screen and (max-width:380px) {

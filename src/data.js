@@ -2,9 +2,10 @@
 import about_img from "./images/about_img.jpg";
 import hero_img from "./images/hero_img.jpg";
 import comp1 from "./images/comp1.png";
-import comp2 from "./images/comp2.png";
+import comp2 from "./images/comp2.svg";
 import comp3 from "./images/comp3.png";
 import comp4 from "./images/comp4.png";
+import comp5 from "./images/comp5.png";
 import tech1 from "./images/tech1.jpg";
 import tech2 from "./images/tech2.jpg";
 import tech3 from "./images/tech3.jpg";
@@ -19,7 +20,7 @@ export const specialLinks = {
   twitter: "https://twitter.com/MrTukhtaboev",
 }
 export const images = {
-  about_img, hero_img, comp1, comp2, comp3, comp4, tech1, tech2, tech3, interview, interview2, intervie3
+  about_img, hero_img, comp1, comp2, comp3, comp4, comp5, tech1, tech2, tech3, interview, interview2, intervie3
 }
 // hero section data
 export const HeroData = {
@@ -54,23 +55,28 @@ export const interviewData = [
 export const companyData = [
   {
     id: 1,
-    name: "TechCells ",
-    link: "https://techcells.com/"
+    name: "BARQ app ",
+    link: "https://barqapp.com/"
   },
   {
     id: 2,
+    name: "Microsoft",
+    link: "https://uz.linkedin.com/company/digitalgenerationuzbekistan?trk=similar-pages"
+  },
+  {
+    id: 3,
     name: "Najot Ta'lim",
     link: "https://najottalim.uz/"
   },
   {
-    id: 3,
-    name: "BARQ App",
-    link: "https://barqapp.com/"
+    id: 4,
+    name: "TechCells",
+    link: "https://techcells.com/"
   },
   {
-    id: 4,
-    name: "Microsoft",
-    link: "https://www.microsoft.com/ru-ru"
+    id: 5,
+    name: "uzCard",
+    link: "https://uzcard.uz/ru"
   },
 ];
 
