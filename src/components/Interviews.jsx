@@ -51,6 +51,8 @@ const StyledInterview = styled.section`
       z-index:10;
       transition: transform 150ms ease-in-out;
       transform: scale(0.7);
+      background-position: center;
+      background-size: cover; 
       }
     .interview_card_1{
       position:absolute;
@@ -63,6 +65,8 @@ const StyledInterview = styled.section`
       z-index:9;
       transition: transform 150ms ease-in-out;
       transform: scale(0.7);
+      background-position: center;
+      background-size: cover; 
       }
     .interview_card_2{
       position:absolute;
@@ -75,6 +79,8 @@ const StyledInterview = styled.section`
       z-index:9;
       transition: transform 150ms ease-in-out;
       transform: scale(0.7);
+      background-position: center;
+      background-size: cover; 
       }
       .main_cont{
      position:relative       
@@ -397,7 +403,7 @@ const StyledInterview = styled.section`
               padding-left:30px
             }
         }
-      @media screen and (max-width: 407px) {
+      @media screen and (max-width: 607px) {
         h2{
           font-size:30px;
           margin-top:40px;
@@ -409,35 +415,35 @@ const StyledInterview = styled.section`
           border-radius: 25px;
           }
           .card_info{
-            width: 205px;
-            height: 120px;
-            left: 29px;
-            top: 70px;
-            padding-left:30px
+            width: 175px;
+            height: 90px;
+            left: 21px;
+            top: 92px;
+            padding-left:10px
           }
           .card_info h4{
             font-weight: 700;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 8px;
+            line-height: 9px;
           }
           .card_info h5{
-            font-size: 10px;
-            line-height: 10px;
-          }
-          .card_info p{
-            font-size: 10px;
-            line-height: 8px;
+            font-size: 8px;
+            line-height: 0px;
           }
           .play_cont {
             width: 6px;
             height: 6px;
           }
-          .card_info p {
-            font-size: 10px;
-            line-height: 8px;
-            margin-left: 28px;
-            margin-top: 12px;
+          .play_cont img {
+            width: 20px;
+            height: 20px;
         }
+        .card_info p {
+          font-size: 8px;
+          line-height: 0px;
+          margin-left: 20px;
+          margin-top: 12px;
+      }
           .clickers {
             margin-top: 267px;
         }
@@ -455,26 +461,6 @@ const StyledInterview = styled.section`
             width: 300px;
             height: 204px;
             border-radius: 25px;
-            }
-            .card_info h4{
-              font-weight: 700;
-              font-size: 10px;
-              line-height: 18px;
-            }
-            .card_info h5{
-              font-size: 8px;
-              line-height: 22px;
-            }
-        }
-        @media screen and (max-width:376px) {
-            .card_info h4{
-              font-weight: 700;
-              font-size: 10px;
-              line-height: 10px;
-            }
-            .card_info h5{
-              font-size: 8px;
-              line-height: 10px;
             }
         }
         @media screen and (min-width:1400px) {

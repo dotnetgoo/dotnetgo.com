@@ -3,8 +3,9 @@ import { Element } from "react-scroll";
 import styled from "styled-components";
 import Logo from "../images/footer_logo.png";
 import NameImg from "../images/footer_name.png";
-import { FaGithub, FaTelegram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTelegram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
 // Components
+import { specialLinks } from "../data";
 const StyledFooter = styled.footer`
 background: #000000;
 height: 245px;
@@ -22,6 +23,7 @@ height: 245px;
     margin-right:21px;
     margin-bottom:14px;
     transition:all 0.2s;
+    display:flex;
     justify-content: center;
     align-items: center;
     padding: 6px;
@@ -77,36 +79,39 @@ export default function Footer() {
             </div>
             <div className="d-flex align-items-center icon_cont">
               <a
-                href="https://t.me/mukhammadkarim_tukhtaboev"
+                href={specialLinks.telegram}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
-                style={{ paddingLeft: "7px", paddingTop: "4px" }}
               >
                 <FaTelegram />
               </a>
               <a
-                href="https://github.com/dotnetgoo"
+                href={specialLinks.gitHub}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
-                style={{ paddingLeft: "7px", paddingTop: "4px" }}
               >
                 <FaGithub />
               </a>
               <a
-                href="https://www.linkedin.com/in/mukhammadkarim-tukhtaboev/"
+                href={specialLinks.linkedin}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
-                style={{ paddingLeft: "7px", paddingTop: "4px" }}
               >
                 <FaLinkedin />
               </a>
               <a
-                href="https://www.youtube.com/@JanobPanda"
+                href={specialLinks.youTube}
                 aria-label="Check out my GitHub profile."
                 className="link_icons"
-                style={{ paddingLeft: "7px", paddingTop: "4px" }}
               >
                 <FaYoutube />
+              </a>
+              <a
+                href={specialLinks.twitter}
+                aria-label="Check out my GitHub profile."
+                className="link_icons"
+              >
+                <FaTwitter />
               </a>
             </div>
 

@@ -22,7 +22,7 @@ const StyledInterview = styled.section`
   .rec_card{
     box-sizing: border-box;    
     width: 364px;
-    height: 250px;
+    height: auto;
     background: rgba(255, 255, 255, 0.79);
     border-radius: 15px;
     margin-right:14px;
@@ -106,7 +106,6 @@ const StyledInterview = styled.section`
     }
     .rec_card {
       width: 234px;
-      height: 237px;
       margin-right: 14px;
       margin-top: 24px;
   }
@@ -130,7 +129,7 @@ const StyledInterview = styled.section`
       height: 300px;
     }
   }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 767px) {
     .recc_cont{
       display: flex;
       flex-direction:column;
@@ -154,10 +153,10 @@ export default function Recommendations() {
               <h2>Recommendations</h2>
             </Title>
           </Container>
-          <div className="align-items-center recc_cont" xs={1} md={3} lg={3} >
+          <div className="align-items-center recc_cont" >
             {recommendationsData.map(element => {
               return (
-                <div className=" rec_card" key={element.id}>
+                <div className="rec_card" key={element.id}>
                   <h3>{element.title}</h3>
                   <h4>{element.description}</h4>
                   <p>Learn More</p>

@@ -24,7 +24,7 @@ const StyledCompanies = styled.section
     margin-bottom:30px;
   }
   .company_card{
-    width: 282px;
+    width: 90%;
     height: 160.43px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -32,9 +32,14 @@ const StyledCompanies = styled.section
     justify-content: center;
     align-items: center;
   }
-  .company_card img{
+  .product--image{
     width: 205px;
     height: 50px;
+    
+  }
+  .uzcard--image{
+    height: 111px;
+    width: 157px;
   }
   .react-multiple-carousel__arrow--left , .react-multiple-carousel__arrow{
     display:none
@@ -61,9 +66,13 @@ const StyledCompanies = styled.section
     .company_card {
       width: 225px;
       height: 125.43px;}
-      .company_card img {
+      .product--image{
         width: 179px;
         height: 37px;
+    }
+    .uzcard--image{
+      height: 95px;
+      width: 140px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -72,9 +81,13 @@ const StyledCompanies = styled.section
       line-height: 52px;
       margin-top: 30px;
     }
-    .company_card img {
+    .product--image {
       width: 109px;
       height: 27px;
+  }
+  .uzcard--image{
+    width: 80px;
+    height: 45px;
   }
   .company_card {
     width: 140px;
@@ -110,9 +123,13 @@ h2 {
   font-size: 27px;
   line-height: 52px;
 }
-.company_card img {
+.product--image {
   width: 100px;
   height: 23px;
+}
+.uzcard--image{
+  width: 76px;
+  height: 40px;
 }
 }
 @media screen and (max-width: 440px) {
@@ -131,7 +148,7 @@ h2 {
     width: 102px;
     height: 60px;
 }
-.company_card img {
+.product--image{
   width: 90px;
   height: 20px;
 }
@@ -162,15 +179,16 @@ export default function Companies() {
       <StyledCompanies className="section">
         <Container className="text-center">
           <Title>
-            <h2 className="mb-5">The companies I worked for</h2>
+            <h2 className="mb-5">Companies</h2>
           </Title>
           <Row className="mt-3 align-items-center corusel_row" >
             <Carousel showDots={true} responsive={responsive}>
               {companyData.map(element => {
                 return (
-                  <a href={element.link} style={{ textDecoration: "none" }} target="blank">
+                  <a href={element.link} style={{ textDecoration: "none" }} target="blank" key={element}>
                     <div className="company_card">
-                      <img className="product--image" src={element.id === 1 ? images.comp1 : element.id === 2 ? images.comp2 : element.id === 3 ? images.comp3 : images.comp4} alt="product" />
+                      {element.id !== 5 && <img className="product--image" src={element.id === 1 ? images.comp1 : element.id === 2 ? images.comp2 : element.id === 3 ? images.comp3 : images.comp4} alt="product" />}
+                      {element.id === 5 && <img className="uzcard--image" src={images.comp5} alt="product" />}
                     </div>
                   </a>
                 )

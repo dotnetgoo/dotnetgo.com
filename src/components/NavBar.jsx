@@ -37,7 +37,17 @@ const StyledNavbar = styled.header`
    height: 52px;
    cursor:pointer;
    margin-top:10px;
-  } @media screen and (max-width: 1240px) {
+  }
+  .logo_icon{
+    width:40px;
+    height:40px;
+  }
+  .logo_text{
+    margin-left:8px;
+    width:120px;
+    height:40px;
+  }
+  @media screen and (max-width: 1240px) {
     .nav_links_cont {
       margin-left: 36px;
   }}
@@ -46,14 +56,22 @@ const StyledNavbar = styled.header`
       margin-right: 20px;
   }
   }
-  @media screen and (max-width: 1320px) {
-  }
-  @media screen and (max-width: 900px) {
-  }
+
   @media screen and (max-width: 600px) {
+    .logo_icon{
+      width:34px;
+      height:34px;
+    }
+    .logo_text{
+      margin-left:8px;
+      width:110px;
+      height:30px;
+    }
+    .contact_me_link{
+      margin-left: 32px;
+    }
   }
-  @media screen and (max-width:360px) {
-  }
+ 
 `;
 export default function NavBar() {
   const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
@@ -74,16 +92,13 @@ export default function NavBar() {
                 onClick={closeExpanded}
                 alt="React Logo"
                 src={Logo}
-                width="40"
-                height="40"
+                className="logo_icon"
               />
               <img
                 onClick={closeExpanded}
                 alt="React Logo"
                 src={NameImg}
-                width="120"
-                height="40"
-                style={{ marginLeft: "8px" }}
+                className="logo_text"
               />
             </div>
           </Navbar.Brand>
