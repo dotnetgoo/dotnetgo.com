@@ -18,7 +18,7 @@ height: 245px;
     flex-direction:row;
   }
   .link_icons{
-    color:#000;
+    color:#000000;
     font-size:1rem;
     margin-right:21px;
     margin-bottom:14px;

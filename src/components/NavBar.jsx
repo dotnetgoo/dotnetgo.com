@@ -18,7 +18,8 @@ const StyledNavbar = styled.header`
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  margin-right:32px
+  margin-right:32px;
+  color:#000000;
   }
   .contact_me_link{
     text-decoration:none;

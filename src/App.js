@@ -50,7 +50,7 @@ export default function App() {
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (e) =>
-      e.matches ? setTheme("dark") : setTheme("light")
+      e.matches ? setTheme("light") : setTheme("light")
     );
 
   if (isLoading) {

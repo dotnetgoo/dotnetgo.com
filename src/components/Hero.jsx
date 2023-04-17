@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Col, Container } from "react-bootstrap";
 import { FaGithub, FaTelegram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
 import bg from '../images/blue.png';
-
 // data
 import { specialLinks, HeroData, images } from "../data";
 const StyledHero = styled.header`
@@ -41,14 +40,15 @@ h6{
     font-weight: 500;
     font-size: 1rem;
     line-height: 32px;
-    margin-top:32px
+    margin-top:32px;
+    color:rgb(25, 6, 73);
   }
   .follow_title{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
-    color: #000000;
+    color: #000;
     margin-right:25px;
   }
   .link_icons{
@@ -62,10 +62,11 @@ h6{
     color:#5300CE
   }
   .draw{
-width: 80px;
-height: 2px;
-background: #000000;
-margin-right:18px;
+    width: 80px;
+    height: 2px;
+    background: #000;
+    color:#000;
+    margin-right:18px;
   }
   .icon_cont{
     margin-top:152px
@@ -192,17 +193,21 @@ margin-right:18px;
     h1 {
       line-height: 26px;
       width: 357px;
-      font-size: 18px;}
+      font-size: 18px;
+      color:#000;
+    }
     h4 {
       line-height: 26px;
       width: 357px;
       font-size: 18px;
-    text-align:center;
+      text-align:center;
+      color:#000;
     }
     h6{
         text-align:center;
         width: 345px;
         font-size: 12px;
+        color:#000;
       }
         .img_cont {
           margin-top: 57px;
@@ -211,10 +216,16 @@ margin-right:18px;
   }
   @media screen and (max-width:400px) {
     .draw{
-      width: 50px;
+      width: 35px;
       height: 2px;
-      background: #000000;
       margin-right:12px;
+    }
+    .follow_title{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      color: #000;
+      margin-right:15px;
     }
     .icon_cont{
       margin-left: 31px;

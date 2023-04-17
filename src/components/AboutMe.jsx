@@ -36,7 +36,8 @@ h6{
     font-weight: 500;
     font-size: 1rem;
     line-height: 32px;
-    margin-top:32px
+    margin-top:32px;
+    color:#000000;
   }
   .follow_title{
     font-style: normal;
@@ -61,6 +62,7 @@ h6{
     height: 2px;
     background: #000000;
     margin-right:18px;
+    color:#000;
   }
   .icon_cont{
     margin-top:152px
@@ -184,7 +186,8 @@ h6{
         h4 {
           line-height: 26px;
           width: 357px;
-          font-size: 18px;}
+          font-size: 18px;
+        }
           h6 {
             width: 345px;
             font-size: 12px;}
@@ -197,10 +200,14 @@ h6{
         h4 {
           line-height: 26px;
           width: 327px;
-          font-size: 18px;}
+          font-size: 18px;
+          text-align:center;
+        }
           h6 {
             width: 325px;
-            font-size: 12px;}
+            font-size: 12px;
+            text-align:center;
+          }
             .about_img_cont {
               margin-top: 67px;
           }
