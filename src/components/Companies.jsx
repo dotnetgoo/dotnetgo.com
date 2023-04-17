@@ -193,7 +193,6 @@ export default function Companies() {
                   </a>
                 )
               })}
-
             </Carousel>
           </Row>
 
