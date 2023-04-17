@@ -189,7 +189,7 @@ h6{
             text-align:center;
             font-size: 12px;}
             .about_img_cont {
-              margin-top: 67px;
+              margin-top: 68px;
               margin-right:0;
           }
       }
