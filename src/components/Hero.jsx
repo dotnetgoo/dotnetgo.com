@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Col, Container } from "react-bootstrap";
 import { FaGithub, FaTelegram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
 import bg from '../images/blue.png';
+import draw from '../images/draw.png';
 // data
 import { specialLinks, HeroData, images } from "../data";
 const StyledHero = styled.header`
@@ -10,7 +11,6 @@ const StyledHero = styled.header`
     font-weight: 700;
     font-size: 70px;
     line-height: 89px;
-    color: #000000;
     margin-top:80px
   } 
   .hero_bg{
@@ -29,10 +29,10 @@ const StyledHero = styled.header`
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
-    color: #000000;
-    margin-top:60px
+    margin-top:60px;
   }
 h6{
+  color-scheme: only light;
     width: 625px;
     height: 64px;
     font-family: 'Space Grotesk';
@@ -41,32 +41,32 @@ h6{
     font-size: 1rem;
     line-height: 32px;
     margin-top:32px;
-    color:rgb(25, 6, 73);
   }
   .follow_title{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
-    color: #000;
     margin-right:25px;
+    margin-bottom: 14px;
+    color:#5300CE;
   }
   .link_icons{
-    color:#000;
+    color:#5300CE;
     font-size:1rem;
     margin-right:21px;
     margin-bottom:14px;
     transition:all 0.2s;
   }
   .link_icons:hover{
-    color:#5300CE
+    color:#5300CE;
   }
   .draw{
     width: 80px;
     height: 2px;
-    background: #000;
-    color:#000;
     margin-right:18px;
+    margin-bottom: 8px;
+
   }
   .icon_cont{
     margin-top:152px
@@ -194,20 +194,17 @@ h6{
       line-height: 26px;
       width: 357px;
       font-size: 18px;
-      color:#000;
     }
     h4 {
       line-height: 26px;
       width: 357px;
       font-size: 18px;
       text-align:center;
-      color:#000;
     }
     h6{
         text-align:center;
         width: 345px;
         font-size: 12px;
-        color:#000;
       }
         .img_cont {
           margin-top: 57px;
@@ -219,13 +216,14 @@ h6{
       width: 35px;
       height: 2px;
       margin-right:12px;
+      margin-bottom: 13px;
     }
     .follow_title{
       font-weight: 600;
       font-size: 14px;
       line-height: 14px;
-      color: #000;
       margin-right:15px;
+
     }
     .icon_cont{
       margin-left: 31px;
@@ -243,7 +241,7 @@ export default function Hero() {
             <h4>{HeroData.profession}</h4>
             <h6>{HeroData.description}</h6>
             <div className="d-flex align-items-center icon_cont">
-              <p className="draw"></p>
+              <img src={draw} alt="draw" className="draw" />
               <p className="follow_title">Follow me:</p>
               <a
                 href={specialLinks.telegram}

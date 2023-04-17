@@ -19,14 +19,13 @@ const StyledCompanies = styled.section
     font-size: 64px;
     line-height: 82px;
     text-align: center;
-    color: #000000;
     margin-top:100px;
     margin-bottom:30px;
   }
   .company_card{
     width: 90%;
     height: 160.43px;
-    background: #FFFFFF;
+    background: rgb(255, 255, 255 ,255);
     border-radius: 10px;
     display: flex;
     justify-content: center;

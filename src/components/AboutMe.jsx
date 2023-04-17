@@ -14,7 +14,6 @@ font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 46px;
-color: #000000;
   } 
   h4{
     font-family: 'Space Grotesk';
@@ -37,18 +36,15 @@ h6{
     font-size: 1rem;
     line-height: 32px;
     margin-top:32px;
-    color:#000000;
-  }
+}
   .follow_title{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
-    color: #000000;
     margin-right:25px;
   }
   .link_icons{
-    color:#000;
     font-size:1rem;
     margin-right:21px;
     margin-bottom:14px;
@@ -60,9 +56,8 @@ h6{
   .draw{
     width: 80px;
     height: 2px;
-    background: #000000;
+    background: rgb(0, 0, 0);
     margin-right:18px;
-    color:#000;
   }
   .icon_cont{
     margin-top:152px
@@ -187,9 +182,11 @@ h6{
           line-height: 26px;
           width: 357px;
           font-size: 18px;
+          text-align:center;
         }
           h6 {
             width: 345px;
+            text-align:center;
             font-size: 12px;}
             .about_img_cont {
               margin-top: 67px;

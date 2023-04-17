@@ -10,23 +10,22 @@ import NameImg from "../images/name.png";
 import { specialLinks } from "../data";
 const StyledNavbar = styled.header`
   .nav_links_cont {
-    margin-left:100px
+    margin-left:100px;
   } 
   .nav-link{
-  color:black;
+  color:#6C26D4;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   margin-right:32px;
-  color:#000000;
   }
   .contact_me_link{
     text-decoration:none;
    font-weight: 500;
    font-size: 16px;
    line-height: 20px;
-   color: #FFFFFF;
+   color: rgb(255, 255, 255 ,255);
    background: #5300CE;
    border-radius: 10px;
    display: flex;

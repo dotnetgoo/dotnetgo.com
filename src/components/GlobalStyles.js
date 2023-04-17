@@ -9,14 +9,20 @@ Variables
   --primary-light: #b0edfd;
   /* Primary Color */
   --primary: #61DBFB;
+  --primary-red: yellow;
   --primary-dark: #316e7e;
   --border: 1px solid #61DBFB;
   --transition: all 0.3s linear;
   --nav-height: 61px;
   --min-footer-height: 11vh;
   --card-height: 30rem;
+  --background:var(--primary-red);
 }
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:var(--primary);
+  }
+}
 /*
 =============== 
 Global Styles
@@ -81,6 +87,12 @@ a:hover {
     color: var(--primary);
   }
   }
+  :root { color: blue }
+  @media (prefers-color-scheme: dark) {
+    :root { --primary: red; }
+  }
+
+
 `;
 
 export default GlobalStyles;
