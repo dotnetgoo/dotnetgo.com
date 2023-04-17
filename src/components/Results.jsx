@@ -23,7 +23,6 @@ font-weight: 700;
 font-size: 64px;
 line-height: 82px;
 text-align: center;
-color: #000000;
 margin-bottom:35px;
 margin:90px 0;
   }
@@ -31,7 +30,6 @@ margin:90px 0;
     box-sizing: border-box;    
     width: 354px;
     height: 237px;
-    margin-right:24px;
     padding:14px;
     display: flex;
     justify-content: center;
@@ -43,7 +41,6 @@ margin:90px 0;
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    color: #000000;    
   }
   .result_card h4{
 font-style: normal;

@@ -26,7 +26,6 @@ const StyledInterview = styled.section`
   font-weight: 700;
   font-size: 64px;
   line-height: 82px;
-  color: #000000;
   margin-top:130px;
  }
     .inter_cont{
@@ -115,13 +114,13 @@ const StyledInterview = styled.section`
         font-weight: 700;
         font-size: 20px;
         line-height: 26px;
-        color: #FFFFFF;
+        color: rgb(255, 255, 255 ,255);
       }
       .card_info h5{
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
-        color: #FFFFFF;
+        color: rgb(255, 255, 255 ,255);
       }
       .play_video{
         display:flex;
@@ -130,7 +129,7 @@ const StyledInterview = styled.section`
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
-        color: #FFFFFF;
+        color: rgb(255, 255, 255 ,255);
         margin-top: 4px;
         margin-left: 11px;
       }

@@ -7,7 +7,7 @@ import { FaGithub, FaTelegram, FaYoutube, FaLinkedin, FaTwitter } from "react-ic
 // Components
 import { specialLinks } from "../data";
 const StyledFooter = styled.footer`
-background: #000000;
+background: rgb(0, 0, 0);
 height: 245px;
   a {
     color: #fbfdff;
@@ -18,7 +18,7 @@ height: 245px;
     flex-direction:row;
   }
   .link_icons{
-    color:#000;
+    color:#5300CE;;
     font-size:1rem;
     margin-right:21px;
     margin-bottom:14px;
@@ -29,7 +29,7 @@ height: 245px;
     padding: 6px;
     width: 32px;
     height: 32px;
-    background: #FFFFFF;
+    background: rgb(255, 255, 255 ,255);
     box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.01);
     border-radius: 50px;
   }
@@ -55,7 +55,6 @@ height: 245px;
       height: 185px;
   }
 `;
-
 export default function Footer() {
   return (
     <StyledFooter >

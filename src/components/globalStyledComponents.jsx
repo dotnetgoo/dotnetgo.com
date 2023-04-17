@@ -148,9 +148,6 @@ export function BackToTop({ home }) {
 
   return (
     <StyledDiv ref={up}>
-      {/* <Link to={home} className="link-icons" style={{ background: "#000" }}>
-        <p style={{ transform: "rotate(-90deg)", fontSize: "14px", color: "#fff" }}>Back to Top</p>
-      </Link> */}
     </StyledDiv>
   );
 }

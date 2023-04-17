@@ -41,7 +41,7 @@ const StyledInterview = styled.section`
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    color: #000000;
+    color: rgb(0, 0, 0);
     margin-bottom:10px;
   }
   .rec_card h4{
@@ -50,14 +50,13 @@ const StyledInterview = styled.section`
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: rgb(0, 0, 0);
   }
   h2{
     font-weight: 700;
     font-size: 64px;
     line-height: 82px;
     text-align: center;
-    color: #000000;
     margin-bottom:47px;
     margin:90px 0;
   }
@@ -67,7 +66,7 @@ const StyledInterview = styled.section`
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
-    color: #000000;
+    color: rgb(0, 0, 0);
     margin-top:13px;
   }
   .rec_bg{
@@ -86,7 +85,7 @@ const StyledInterview = styled.section`
     }
     .rec_card{
       width: 300px;
-      background: #FFFFFF;
+      background: rgb(255, 255, 255);
       border-radius: 15px;
       margin-right:14px;
       margin-top:24px;

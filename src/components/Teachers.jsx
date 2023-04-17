@@ -57,7 +57,6 @@ const StyledAboutMe = styled.section`
     font-size: 64px;
     line-height: 82px;
     text-align: center;
-    color: #000000;
     margin:90px 0;
   }
   .tech_card p{   
